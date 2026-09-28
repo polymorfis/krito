@@ -1,0 +1,14 @@
+# Contexte de build minimal : sources de Krito, exemples et fichiers du modèle uniquement.
+*
+!pyproject.toml
+!README.md
+!LICENSE
+!src/
+!examples/_modele.py
+!examples/04_api_fastapi.py
+!examples/serverless_lambda/handler.py
+!modele/
+!experiments/models/*/model.opt.onnx
+!experiments/models/*/tokenizer.json
+!experiments/models/*/labels.json
+**/__pycache__

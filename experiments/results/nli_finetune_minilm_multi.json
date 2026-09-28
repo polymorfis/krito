@@ -1,0 +1,46 @@
+{
+  "support_cv": {
+    "krito_ft_minilm_multi": {
+      "accuracy": 0.6583333333333334,
+      "macro_f1": 0.6556046917192428,
+      "auroc_accept": 0.8227568795759023,
+      "auroc_ood": 0.79625,
+      "ece": 0.14060912306110065,
+      "coverage_at_95": 0.20833333333333334,
+      "coverage_at_90": 0.3416666666666667,
+      "accuracy_std": 0.04289845892077916,
+      "auroc_accept_std": 0.05779217952629912
+    },
+    "abs_ft_minilm_multi": {
+      "accuracy": 0.6583333333333334,
+      "macro_f1": 0.6556046917192428,
+      "auroc_accept": 0.8103396805597944,
+      "auroc_ood": 0.88375,
+      "ece": 0.23360678014190248,
+      "coverage_at_95": 0.18749999999999997,
+      "coverage_at_90": 0.325,
+      "accuracy_std": 0.04289845892077916,
+      "auroc_accept_std": 0.06928838993118372
+    }
+  },
+  "rh_transfer": {
+    "krito_ft_minilm_multi": {
+      "accuracy": 0.7066666666666667,
+      "macro_f1": 0.7038371998371998,
+      "auroc_accept": 0.8089622641509433,
+      "auroc_ood": 0.7786666666666667,
+      "ece": 0.05815621892611185,
+      "coverage_at_95": 0.26666666666666666,
+      "coverage_at_90": 0.4266666666666667
+    },
+    "abs_ft_minilm_multi": {
+      "accuracy": 0.7066666666666667,
+      "macro_f1": 0.7038371998371998,
+      "auroc_accept": 0.7883254716981133,
+      "auroc_ood": 0.8466666666666666,
+      "ece": 0.16327213739355406,
+      "coverage_at_95": 0.25333333333333335,
+      "coverage_at_90": 0.4
+    }
+  }
+}

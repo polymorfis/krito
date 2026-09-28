@@ -1,0 +1,62 @@
+{
+  "legal": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "programming": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "finance": {
+    "accuracy": 0.9166666666666666,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "marketing": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "automotive": {
+    "accuracy": 0.9583333333333334,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "communication": {
+    "accuracy": 0.9166666666666666,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "news": {
+    "accuracy": 1.0,
+    "ood_said_none": 0.8,
+    "in_domain_said_none": 0.0
+  },
+  "politics": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "health": {
+    "accuracy": 0.9166666666666666,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "realestate": {
+    "accuracy": 0.9583333333333334,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "itsec": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  },
+  "ecommerce": {
+    "accuracy": 1.0,
+    "ood_said_none": 1.0,
+    "in_domain_said_none": 0.0
+  }
+}

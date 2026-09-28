@@ -1,0 +1,291 @@
+text,label
+J'ai été débité deux fois pour la même commande.,billing
+"Ma facture de ce mois-ci est plus élevée que prévu, pourquoi ?",billing
+Ma carte bancaire est refusée au moment de payer.,billing
+Je ne trouve pas ma facture PDF pour ma comptabilité.,billing
+Le prélèvement SEPA a échoué et je reçois des relances.,billing
+Vous m'avez facturé une option que je n'ai jamais demandée.,billing
+bonjour jai ete preleve 2 fois ce mois ci merci de me rembourser,billing
+Pouvez-vous m'envoyer une facture avec le numéro de TVA de ma société ?,billing
+Le montant prélevé ne correspond pas au tarif affiché lors de la souscription.,billing
+J'attends toujours le remboursement promis il y a trois semaines.,billing
+Je souhaite changer la carte bancaire associée à mon compte pour les paiements.,billing
+"Le paiement par PayPal ne passe pas, j'ai un message d'échec de transaction.",billing
+Pourquoi ai-je reçu une relance d'impayé alors que j'ai déjà réglé ?,billing
+Est-il possible de payer en trois fois sans frais ?,billing
+"La facture indique une mauvaise adresse de facturation, pouvez-vous la corriger ?",billing
+Mon virement a bien été envoyé mais il n'apparaît pas sur mon compte client.,billing
+Un avoir m'a été promis mais je ne le vois nulle part.,billing
+J'ai été facturé au tarif mensuel alors que j'avais choisi l'annuel.,billing
+"Ma banque me signale un prélèvement inconnu de votre part de 49,90 €.",billing
+Je voudrais passer au paiement par prélèvement automatique plutôt que par carte.,billing
+Les frais de port ont été facturés deux fois sur ma commande.,billing
+Le code promo n'a pas été déduit du montant final que j'ai payé.,billing
+Où puis-je télécharger l'historique de toutes mes factures ?,billing
+J'ai une question sur la ligne « frais de service » de ma dernière facture.,billing
+"Je conteste le prélèvement du 12, je n'avais rien commandé.",billing
+Mon paiement est resté bloqué en « en attente » depuis hier.,billing
+svp comment on fait pour avoir une facture au nom de l'entreprise et pas à mon nom,billing
+La TVA appliquée sur ma facture me semble incorrecte.,billing
+Le remboursement a été fait sur une ancienne carte qui n'existe plus.,billing
+J'ai reçu deux factures différentes pour le même mois.,billing
+Le 3D Secure ne s'affiche jamais et ma banque bloque le paiement.,billing
+Pourriez-vous me confirmer que mon règlement par chèque a bien été encaissé ?,billing
+Je paie depuis l'étranger et on me facture des frais de change inattendus.,billing
+Mon abonnement a augmenté de 5 € sans que j'aie été prévenu.,billing
+J'aimerais obtenir un échéancier pour régler ma dette en plusieurs fois.,billing
+Le reçu de paiement ne mentionne pas le détail des articles.,billing
+"Vous avez débité mon compte avant même l'expédition, est-ce normal ?",billing
+Mon comptable a besoin d'un duplicata de la facture n° F-2024-0932.,billing
+La carte cadeau n'a pas été prise en compte dans le paiement.,billing
+Je n'ai pas reçu le remboursement de la commande annulée.,billing
+Le colis indiqué comme livré n'a jamais été déposé dans ma boîte aux lettres.,shipping
+Ma commande est bloquée en transit depuis dix jours.,shipping
+Le numéro de suivi ne fonctionne pas sur le site du transporteur.,shipping
+J'ai reçu un carton abîmé avec la moitié des articles.,shipping
+Le livreur n'est jamais passé alors que j'étais chez moi.,shipping
+Pouvez-vous changer l'adresse de livraison de ma commande en cours ?,shipping
+ou en est ma commande ?? ca fait une semaine,shipping
+"J'ai reçu le mauvais article, j'avais commandé une taille M et j'ai un XL.",shipping
+"Le point relais indiqué est fermé définitivement, comment récupérer mon paquet ?",shipping
+La date de livraison estimée est dépassée depuis quatre jours.,shipping
+Il manque un article dans mon colis alors que le bon de livraison l'indique.,shipping
+Est-ce que vous livrez en Belgique et en Suisse ?,shipping
+"Le transporteur me demande des frais de douane, est-ce normal ?",shipping
+Mon colis est reparti à l'expéditeur sans que j'aie reçu d'avis de passage.,shipping
+"Je voudrais être livré en express, c'est possible pour une commande déjà passée ?",shipping
+"Le suivi indique « adresse incomplète », pourtant elle est correcte.",shipping
+Le paquet a été laissé devant la porte et il a disparu.,shipping
+Combien de temps faut-il pour recevoir une commande en Corse ?,shipping
+Le livreur a déposé mon colis chez un voisin que je ne connais pas.,shipping
+L'emballage était ouvert à la réception et le produit est rayé.,shipping
+Je n'ai reçu qu'un colis sur les deux annoncés.,shipping
+Pouvez-vous reprogrammer la livraison à samedi ? Je suis absent en semaine.,shipping
+Ma commande n'a toujours pas été expédiée alors qu'elle est payée depuis lundi.,shipping
+"Je souhaite retourner un article, comment obtenir l'étiquette de retour ?",shipping
+Le suivi n'a pas bougé depuis « pris en charge par le transporteur ».,shipping
+"Le livreur exige une signature mais je ne serai pas là, que faire ?",shipping
+"le coli est arrivé écrasé, le verre est cassé à l'intérieur",shipping
+J'ai commandé il y a 3 semaines et toujours aucun mail d'expédition.,shipping
+Puis-je récupérer ma commande directement dans votre entrepôt ?,shipping
+"Le transporteur dit avoir perdu mon colis, que se passe-t-il maintenant ?",shipping
+Mon colis est arrivé mais ce n'est pas mon nom sur l'étiquette.,shipping
+Je veux modifier le créneau de livraison que j'ai choisi.,shipping
+Le suivi indique livré à une adresse à 300 km de chez moi.,shipping
+Les frais de livraison vers les DOM-TOM sont-ils inclus ?,shipping
+Pourquoi ma commande a-t-elle été scindée en trois envois ?,shipping
+"J'ai refusé le colis endommagé, quand serai-je relivré ?",shipping
+L'article reçu ne correspond pas à la photo du site.,shipping
+Le casier Amazon Locker n'accepte pas le code que j'ai reçu.,shipping
+Pouvez-vous me donner le nom du transporteur et le numéro d'expédition ?,shipping
+Mon échange de taille n'est jamais arrivé.,shipping
+J'ai oublié mon mot de passe et le lien de réinitialisation n'arrive pas.,account
+Mon compte est bloqué après trop de tentatives.,account
+Je ne reçois pas le code de double authentification par SMS.,account
+Quelqu'un s'est connecté à mon compte depuis un autre pays.,account
+Je n'arrive plus à me connecter depuis que j'ai changé d'adresse e-mail.,account
+L'authentification via Google me renvoie une erreur.,account
+"impossible de me connecter, il me dit identifiants incorrects alors que je suis sûr du mdp",account
+Comment changer l'adresse e-mail associée à mon compte ?,account
+J'ai perdu mon téléphone et je ne peux plus valider la double authentification.,account
+Je veux ajouter un collègue comme utilisateur sur notre compte entreprise.,account
+Mon compte a été suspendu sans explication.,account
+Je ne reçois pas l'e-mail de confirmation d'inscription.,account
+Comment supprimer définitivement mes données personnelles de votre plateforme ?,account
+La session se déconnecte toute seule toutes les deux minutes.,account
+"Je pense que mon compte a été piraté, mon mot de passe a été changé.",account
+Est-ce possible de fusionner mes deux comptes clients ?,account
+"Je n'ai plus accès à l'adresse mail de mon compte, comment faire ?",account
+"Mon collègue a quitté l'entreprise, comment récupérer l'accès administrateur ?",account
+Le lien d'activation de mon compte a expiré.,account
+Je veux modifier mon numéro de téléphone mais le champ est grisé.,account
+Comment activer la double authentification sur mon profil ?,account
+La connexion avec Apple ID ne fonctionne plus depuis que j'ai changé d'iPhone.,account
+J'ai reçu un e-mail de réinitialisation de mot de passe que je n'ai pas demandé.,account
+Je n'arrive pas à changer mon nom d'utilisateur.,account
+Mon compte affiche le profil de quelqu'un d'autre !,account
+Le captcha refuse systématiquement ma réponse à la connexion.,account
+Je souhaite retirer les droits d'administrateur à un utilisateur.,account
+"Mon mot de passe ne respecte jamais les règles, lesquelles sont-elles ?",account
+"j'ai créé un compte avec la mauvaise adresse mail, on peut la changer ?",account
+Le SSO de mon entreprise ne me connecte plus à votre outil.,account
+Je reçois « compte inexistant » alors que je suis client depuis 2019.,account
+Je veux télécharger une copie de toutes mes données personnelles (RGPD).,account
+Est-ce que je peux utiliser le même compte sur plusieurs appareils ?,account
+Comment déconnecter toutes les sessions ouvertes sur mon compte ?,account
+L'application me demande de me reconnecter à chaque ouverture.,account
+La clé de sécurité physique n'est pas reconnue à la connexion.,account
+Je n'arrive pas à valider mon identité lors de l'inscription.,account
+Mon profil a été verrouillé suite à un changement de mot de passe.,account
+J'ai des invitations d'équipe en attente que je ne peux pas accepter.,account
+Comment récupérer l'accès si j'ai perdu mes codes de secours 2FA ?,account
+Je veux résilier mon abonnement à la fin du mois.,cancel
+Comment arrêter le renouvellement automatique ?,cancel
+Je souhaite interrompre mes versements mensuels immédiatement.,cancel
+Merci de clôturer mon compte et de supprimer mon abonnement.,cancel
+"Je ne veux plus de votre service, comment me désabonner ?",cancel
+Je déménage à l'étranger et je dois mettre fin à mon contrat.,cancel
+svp arretez mon abo je m'en sers plus,cancel
+Puis-je suspendre mon abonnement pendant deux mois au lieu de résilier ?,cancel
+J'ai envoyé ma lettre de résiliation il y a un mois et je suis toujours prélevé.,cancel
+Quel est le préavis pour résilier un contrat annuel ?,cancel
+Je souhaite annuler mon essai gratuit avant d'être facturé.,cancel
+Est-ce que je peux résilier en ligne ou faut-il envoyer un courrier ?,cancel
+"Je veux annuler mon abonnement suite au décès de mon père, titulaire du compte.",cancel
+Comment résilier sans frais pendant la période d'engagement ?,cancel
+Je voudrais rétrograder vers l'offre gratuite et arrêter de payer Premium.,cancel
+Merci de ne pas reconduire mon contrat qui arrive à échéance en juin.,cancel
+Je veux mettre fin à la licence de trois utilisateurs sur notre abonnement.,cancel
+"Suite à la hausse de prix, je souhaite résilier.",cancel
+La résiliation est-elle effective immédiatement ou à la fin de la période payée ?,cancel
+J'ai cliqué sur « se désabonner » mais rien ne se passe.,cancel
+Pouvez-vous me confirmer par écrit la résiliation de mon abonnement ?,cancel
+Je souhaite exercer mon droit de rétractation sur l'abonnement souscrit hier.,cancel
+"On ferme notre boutique, il faut arrêter tous nos abonnements chez vous.",cancel
+Je veux annuler ma commande de renouvellement qui a été passée automatiquement.,cancel
+J'aimerais stopper la box mensuelle à partir du mois prochain.,cancel
+Comment résilier au titre de la loi Chatel ?,cancel
+"je veux plus recevoir vos colis mensuels, annulez tout",cancel
+Pouvez-vous désactiver le renouvellement de mon nom de domaine ?,cancel
+"Je veux arrêter mon forfait mais garder mon historique, est-ce possible ?",cancel
+"Mettez fin à mon adhésion, je ne viens plus à la salle.",cancel
+"Ma période d'engagement se termine, je ne souhaite pas continuer.",cancel
+Je vous informe de ma décision de ne pas renouveler notre partenariat de service.,cancel
+Comment supprimer l'option Sérénité de mon contrat sans tout résilier ?,cancel
+"Je souhaite annuler mon abonnement étudiant, j'ai fini mes études.",cancel
+"Arrêtez les prélèvements, je quitte votre service.",cancel
+"L'abonnement a été souscrit par erreur par mon fils, je veux l'annuler.",cancel
+Je voudrais connaître la procédure pour résilier mon contrat entreprise.,cancel
+Est-ce que la résiliation entraîne la perte de mes points fidélité ?,cancel
+Je veux mettre en pause mon abonnement pendant l'été.,cancel
+"J'ai trouvé moins cher ailleurs, je résilie.",cancel
+L'utilisateur signale une erreur 500 lors du paiement par carte bleue.,bug
+L'application plante dès que j'ouvre l'onglet statistiques.,bug
+Le site est inaccessible depuis ce matin.,bug
+Les notifications n'apparaissent plus depuis la dernière mise à jour.,bug
+L'export CSV génère un fichier vide.,bug
+La page de recherche tourne en boucle sans jamais afficher de résultat.,bug
+le bouton valider marche pas sur chrome,bug
+Les images des produits ne se chargent plus sur l'application Android.,bug
+J'ai un écran blanc après la connexion sur Safari.,bug
+L'API renvoie une erreur 503 de manière intermittente depuis 14h.,bug
+Le calendrier affiche les rendez-vous avec une heure de décalage.,bug
+La synchronisation entre l'appli mobile et le site ne se fait plus.,bug
+Le formulaire de contact renvoie « erreur inconnue » quand je l'envoie.,bug
+Les accents s'affichent mal dans les PDF générés.,bug
+Le tableau de bord met plus d'une minute à se charger.,bug
+L'application iOS se ferme toute seule au démarrage depuis la version 4.2.,bug
+Le webhook ne se déclenche plus quand une commande est créée.,bug
+Les filtres de la liste de produits ne s'appliquent pas.,bug
+Mon panier se vide tout seul quand je change de page.,bug
+Le mode sombre rend certains textes illisibles.,bug
+"Impossible d'importer mon fichier Excel, la barre de progression reste bloquée à 90 %.",bug
+Les graphiques affichent des valeurs négatives impossibles.,bug
+Le lien de partage génère une page 404.,bug
+"Depuis la mise à jour, le son ne fonctionne plus dans les vidéos.",bug
+La recherche ne trouve aucun résultat quand il y a un accent dans le mot.,bug
+L'application consomme énormément de batterie depuis hier.,bug
+Les données saisies disparaissent quand je rafraîchis la page.,bug
+L'intégration Slack a cessé d'envoyer des messages.,bug
+Il y a un message « NullPointerException » quand j'ouvre un rapport.,bug
+"le site rame énormément, chaque clic prend 10 secondes",bug
+Les e-mails automatiques partent en double à tous nos clients.,bug
+Le glisser-déposer des fichiers ne fonctionne pas sur Firefox.,bug
+La carte ne s'affiche pas sur la page des points de vente.,bug
+Le bouton « ajouter au panier » ne réagit pas sur mobile.,bug
+Les dates sont affichées au format américain malgré mes réglages.,bug
+L'impression du bon de commande coupe la moitié de la page.,bug
+Le compteur de stock affiche des quantités fausses.,bug
+La vidéo de présentation reste noire avec seulement le son.,bug
+"La traduction de l'interface a disparu, tout est en anglais.",bug
+"Le certificat SSL de votre site a expiré, mon navigateur bloque l'accès.",bug
+Combien coûte le passage au forfait Premium annuel ?,sales
+Proposez-vous des remises pour les associations ?,sales
+Quelle est la différence entre l'offre Pro et l'offre Entreprise ?,sales
+Y a-t-il une période d'essai gratuite ?,sales
+Je voudrais un devis pour cinquante licences.,sales
+Vos prix sont-ils HT ou TTC ?,sales
+c combien pour 10 utilisateurs ?,sales
+Avez-vous un tarif spécial pour les étudiants ?,sales
+Est-ce que l'offre Starter inclut l'accès à l'API ?,sales
+Pouvez-vous organiser une démonstration pour notre équipe la semaine prochaine ?,sales
+Faites-vous des promotions pour le Black Friday ?,sales
+Quelles sont les limites de stockage de chaque formule ?,sales
+"Je voudrais passer à l'offre supérieure, quel serait le coût ?",sales
+Existe-t-il un tarif dégressif au-delà de 100 utilisateurs ?,sales
+Proposez-vous une installation sur site pour les grands comptes ?,sales
+Quelle formule me conseillez-vous pour une petite boutique en ligne ?,sales
+Votre solution est-elle disponible en marque blanche ?,sales
+Est-il possible de payer à l'année pour avoir une réduction ?,sales
+Qui est mon interlocuteur commercial pour la région Ouest ?,sales
+Votre offre est-elle compatible avec les marchés publics ?,sales
+Pouvez-vous me faire une proposition pour un contrat de trois ans ?,sales
+J'aimerais connaître vos conditions pour les revendeurs.,sales
+Quelles fonctionnalités sont réservées à l'offre Entreprise ?,sales
+Est-ce que vous faites des prix pour les écoles ?,sales
+Vous avez un catalogue avec les tarifs à jour ?,sales
+Combien coûte l'option support prioritaire ?,sales
+Est-ce que le prix inclut la formation des utilisateurs ?,sales
+"On hésite entre vous et un concurrent, qu'est-ce qui vous différencie ?",sales
+Le parrainage donne-t-il droit à une réduction ?,sales
+J'aimerais tester la version Pro pendant un mois avant d'acheter.,sales
+Quelles sont les conditions de l'offre de lancement ?,sales
+Vous proposez des packs de crédits SMS ? À quel prix ?,sales
+"Je cherche une solution pour 3 sites, pouvez-vous me rappeler ?",sales
+Votre tarif inclut-il les mises à jour futures ?,sales
+Peut-on acheter des licences supplémentaires en cours d'année ?,sales
+Quel est le prix de l'offre sans engagement ?,sales
+Est-ce que vous avez une offre pour les indépendants ?,sales
+Je voudrais être rappelé par un commercial pour discuter de vos offres.,sales
+Proposez-vous une remise pour un paiement comptant ?,sales
+Quelles sont vos grilles tarifaires pour l'international ?,sales
+Quel temps fera-t-il demain à Lyon ?,none
+Pouvez-vous me donner une recette de tarte aux pommes ?,none
+"Bravo à toute l'équipe, votre service est génial !",none
+Qui a gagné le match de football hier soir ?,none
+"Je cherche un stage en marketing, recrutez-vous ?",none
+asdf qwerty 12345,none
+Mon chat refuse de manger ses croquettes.,none
+Quelle est la capitale de l'Australie ?,none
+"Bonjour, je suis journaliste et j'aimerais interviewer votre fondateur.",none
+"Nous proposons des services de référencement SEO, êtes-vous intéressés ?",none
+Suggestion : ce serait bien d'avoir un mode hors ligne dans l'appli.,none
+Quels sont les horaires d'ouverture de votre service client ?,none
+Je vous envoie ma candidature spontanée pour un poste de développeur.,none
+"Merci pour votre réponse rapide, bonne journée !",none
+Où se trouve votre siège social ?,none
+Pouvez-vous m'aider à faire mes devoirs de maths ?,none
+Je voudrais devenir partenaire et intégrer votre solution à la nôtre.,none
+"Test test, est-ce que ce formulaire fonctionne ?",none
+"Vous êtes nuls, je vais vous faire une mauvaise pub partout.",none
+Quel est le numéro de SIRET de votre entreprise ?,none
+J'ai adoré votre dernier article de blog sur la cybersécurité.,none
+Félicitations pour votre levée de fonds !,none
+Est-ce que vous sponsorisez des événements sportifs ?,none
+Comment je fais pour devenir ambassadeur de la marque ?,none
+"Mon voisin fait trop de bruit le soir, que puis-je faire ?",none
+Je recherche un bon restaurant japonais à Paris.,none
+Votre logo ressemble beaucoup à celui d'une autre entreprise.,none
+Est-ce que vous avez une page LinkedIn ?,none
+Qui est le directeur technique de votre société ?,none
+Je souhaiterais visiter vos locaux avec ma classe d'étudiants.,none
+lol,none
+Bonjour,none
+Votre application gagnerait à avoir plus de couleurs.,none
+Pouvez-vous traduire ce texte en espagnol pour moi ?,none
+Quelle est votre politique environnementale ?,none
+J'ai trouvé une faute d'orthographe sur votre page d'accueil.,none
+Faites-vous des dons à des associations caritatives ?,none
+Je voudrais proposer un article invité pour votre blog.,none
+Combien d'employés travaillent chez vous ?,none
+Le film d'hier soir à la télé était vraiment nul.,none
+Vous recrutez des alternants pour la rentrée ?,none
+Est-ce que vous participez au salon VivaTech cette année ?,none
+Je cherche le numéro de téléphone de la mairie.,none
+Mon imprimante personnelle ne veut plus imprimer en couleur.,none
+Avez-vous une politique de télétravail pour vos salariés ?,none
+Je vous conseille de regarder la dernière série sur Netflix.,none
+Pouvez-vous me recommander un bon livre ?,none
+Quelle heure est-il à Tokyo ?,none
+Mon fournisseur d'électricité a augmenté ses prix.,none
+J'aimerais faire un podcast avec votre équipe produit.,none

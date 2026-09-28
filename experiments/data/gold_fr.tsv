@@ -1,0 +1,353 @@
+domain	label	text
+legal	labor	Mon patron m'a convoqué à un entretien préalable vendredi, il parle de faute grave pour trois retards. Est-ce qu'il a le droit ?
+legal	labor	Bonjour Maître, je travaille en CDD depuis 26 mois avec des renouvellements successifs. Mon contrat ne devrait-il pas être requalifié en CDI ?
+legal	labor	on me doit 40 heures sup non payées depuis l'an dernier et la RH fait la sourde oreille, je peux aller aux prud'hommes ?
+legal	labor	Rupture conventionnelle refusée par mon employeur alors qu'il m'avait promis un accord oral. Quels recours ai-je ?
+legal	family	Mon ex-mari ne verse plus la pension alimentaire depuis quatre mois. Comment récupérer les sommes dues ?
+legal	family	Nous souhaitons divorcer par consentement mutuel, sans passer devant le juge. Combien de temps prend la procédure et faut-il deux avocats ?
+legal	family	Bonsoir, mon fils de 14 ans veut vivre chez son père. Est-ce qu'il peut choisir lui-même ou faut-il repasser devant le JAF ?
+legal	family	Madame, suite à notre séparation, mon ancien conjoint refuse de me laisser voir les enfants pendant les vacances prévues par le jugement.
+legal	inheritance	Mon père est décédé le mois dernier. Nous sommes trois enfants et il y a une maison. Par quoi commence-t-on chez le notaire ?
+legal	inheritance	Puis-je donner de mon vivant 100 000 € à ma petite-fille sans qu'elle paie de droits ?
+legal	inheritance	Ma tante a rédigé un testament manuscrit qui déshérite presque entièrement ses neveux, est-il valable ?
+legal	inheritance	bonjour faut il obligatoirement accepter un héritage ? il y a surtout des dettes dans la succession de mon oncle
+legal	consumer	Le cuisiniste a encaissé 50 % d'acompte il y a six mois et n'a toujours rien livré. Je veux récupérer mon argent.
+legal	consumer	J'ai acheté une voiture d'occasion chez un professionnel, la boîte de vitesses a lâché au bout de trois semaines. Garantie légale de conformité ?
+legal	consumer	L'artisan a mal posé mon carrelage, il refuse de revenir. Mise en demeure ou conciliateur de justice d'abord ?
+legal	consumer	Abonnement salle de sport : ils continuent à prélever après ma résiliation en recommandé. Quelle démarche juridique ?
+legal	criminal	Mon fils de 19 ans a été placé en garde à vue cette nuit pour détention de stupéfiants. A-t-il droit à un avocat tout de suite ?
+legal	criminal	Je souhaite porter plainte pour harcèlement : mon voisin m'insulte et me menace depuis des mois. Commissariat ou procureur ?
+legal	criminal	J'ai reçu une convocation au tribunal correctionnel pour conduite sans permis, comment préparer ma défense ?
+legal	criminal	quelqu'un a usurpé mon identité pour ouvrir des crédits, il faut porter plainte où exactement ?
+legal	business	Nous sommes trois associés et voulons créer une SAS. Pouvez-vous rédiger les statuts et un pacte d'associés ?
+legal	business	Un associé minoritaire bloque toutes les décisions de l'assemblée générale. Comment sortir de cette impasse ?
+legal	business	Bonjour, je veux transformer mon auto-entreprise en EURL, quelles formalités juridiques ?
+legal	business	Cession de parts sociales de ma SARL à un tiers : l'agrément des autres associés est-il obligatoire ?
+legal	none	Quels sont vos honoraires pour une première consultation et acceptez-vous l'aide juridictionnelle ?
+legal	none	Votre cabinet est-il ouvert pendant le mois d'août ?
+legal	none	Je voudrais faire un stage de fin d'études dans votre cabinet, à qui envoyer mon CV ?
+legal	none	Merci Maître pour votre aide précieuse durant ces deux années, je vous recommande à tous mes proches.
+legal	none	Pouvez-vous m'indiquer où se garer à proximité de l'étude ?
+programming	runtime_error	TypeError: Cannot read properties of undefined (reading 'map') dans mon composant React quand l'API renvoie une liste vide, une idée ?
+programming	runtime_error	Mon script Python plante avec KeyError: 'id' uniquement sur certains fichiers JSON, alors que la clé est bien là dans la plupart.
+programming	runtime_error	Segfault aléatoire dans notre service C++ en production, impossible à reproduire en local. Comment enquêter ?
+programming	runtime_error	j'ai un NullPointerException ligne 42 alors que j'initialise l'objet dans le constructeur je comprends pas
+programming	dependencies	pip install échoue sur « Failed building wheel for psycopg2 » sous macOS M2, que faire ?
+programming	dependencies	npm me sort un ERESOLVE unable to resolve dependency tree entre react 19 et une vieille lib de formulaires.
+programming	dependencies	Comment gérer proprement plusieurs versions de Node sur la même machine ?
+programming	dependencies	Après la mise à jour de Poetry, mon lock file n'est plus reconnu et le venv ne se crée plus.
+programming	performance	Notre API Django met 4 secondes à répondre sur la liste des commandes. J'ai vu qu'il y a des centaines de requêtes par page, comment réduire ça ?
+programming	performance	Le traitement de mon fichier CSV de 2 Go fait exploser la RAM avec pandas. Existe-t-il une approche en flux ?
+programming	performance	Notre boucle en Java prend 30 s pour 1 million d'éléments, est-ce que les streams parallèles sont une bonne idée ?
+programming	performance	L'appli front devient très lente quand la liste dépasse 5000 lignes, faut-il virtualiser le rendu ?
+programming	database	Comment écrire une requête SQL qui récupère le dernier achat de chaque client sans sous-requête corrélée ?
+programming	database	Migration Postgres : ajouter une colonne NOT NULL sur une table de 50 millions de lignes sans bloquer la prod ?
+programming	database	Avec SQLAlchemy, mes relations many-to-many dupliquent les lignes dans les résultats, pourquoi ?
+programming	database	on a des deadlocks MySQL la nuit pendant le batch d'import, comment les diagnostiquer
+programming	deployment	Mon image Docker fait 2,3 Go, comment la réduire pour accélérer le déploiement ?
+programming	deployment	La pipeline GitHub Actions passe en local mais échoue sur le runner avec un problème de permissions sur le cache.
+programming	deployment	Bonjour, comment faire un déploiement sans interruption de service sur Kubernetes avec des migrations de base ?
+programming	deployment	Notre certificat HTTPS n'est pas renouvelé automatiquement sur le serveur, où configurer ça derrière Nginx ?
+programming	design	Faut-il découper notre monolithe en microservices alors qu'on est une équipe de quatre développeurs ?
+programming	design	Je trouve notre code plein de classes Manager et Helper, comment mieux organiser la logique métier ?
+programming	design	Injection de dépendances ou simples fonctions pures pour rendre le code testable en Python ?
+programming	design	Quel pattern utiliser pour gérer plusieurs fournisseurs de paiement interchangeables ?
+programming	none	Quel clavier mécanique conseillez-vous pour coder toute la journée ?
+programming	none	Des recommandations de conférences tech en France cet automne ?
+programming	none	Je cherche un développeur freelance disponible en novembre, des contacts ?
+programming	none	Merci à tous pour vos réponses sur le forum, j'ai beaucoup appris cette année.
+programming	none	Quelle est la meilleure école pour se reconvertir dans le développement web ?
+finance	tax	Nous passons au-dessus du seuil de franchise de TVA en cours d'année, à partir de quand devons-nous facturer la TVA ?
+finance	tax	Pouvez-vous me rappeler la date limite de dépôt de la liasse fiscale et du paiement du solde d'IS ?
+finance	tax	Un client belge nous demande une facture sans TVA, autoliquidation intracommunautaire, comment la rédiger ?
+finance	tax	est-ce que le repas avec un client est déductible en totalité ou il y a un plafond
+finance	closing	Nous clôturons au 31 décembre : quelles pièces dois-je vous transmettre pour le bilan et avant quelle date ?
+finance	closing	Le stock de fin d'année a été mal compté, peut-on corriger les écritures après la clôture ?
+finance	closing	Bonjour, je ne comprends pas pourquoi le résultat du compte de résultat est positif alors que la banque est à zéro.
+finance	closing	Il manque une provision pour le litige prud'homal dans le projet de bilan, pouvez-vous l'ajouter ?
+finance	cashflow	La banque refuse d'augmenter notre découvert autorisé et nous avons les salaires à payer le 30. Quelles solutions à court terme ?
+finance	cashflow	Est-ce que l'affacturage serait adapté pour une PME de 15 salariés avec des délais de paiement clients à 60 jours ?
+finance	cashflow	Nous voulons financer un nouvel entrepôt : prêt bancaire classique ou crédit-bail ?
+finance	cashflow	prévision de tréso sur 12 mois, vous pouvez nous faire un modèle ? on sent venir un trou en mars
+finance	receivables	Notre plus gros client ne paie plus ses factures depuis trois mois malgré deux relances. Injonction de payer ?
+finance	receivables	Comment automatiser les relances de factures impayées depuis notre logiciel de facturation ?
+finance	receivables	Un client en redressement judiciaire nous doit 12 000 €, faut-il déclarer la créance et à qui ?
+finance	receivables	Peut-on appliquer les pénalités de retard et l'indemnité de 40 € même si ce n'était pas écrit sur le devis ?
+finance	investment	Nous avons 200 000 € de trésorerie excédentaire, où les placer sans risque pour quelques mois ?
+finance	investment	Est-il judicieux que ma société achète des actions cotées plutôt que de laisser dormir l'argent ?
+finance	investment	Je voudrais comparer les frais de deux contrats d'assurance-vie pour placer ma prime de départ.
+finance	investment	PEA ou compte-titres pour investir mensuellement dans des ETF monde ?
+finance	audit	Nous venons de recevoir un avis de vérification de comptabilité de l'administration fiscale, comment se préparer ?
+finance	audit	Notre banque exige des comptes certifiés, faut-il nommer un commissaire aux comptes ?
+finance	audit	L'audit interne a relevé des écarts sur les notes de frais du service commercial, comment présenter cela au conseil ?
+finance	audit	Le contrôleur URSSAF arrive la semaine prochaine, quels documents doivent être prêts ?
+finance	none	Pouvez-vous me rappeler le nom de mon interlocuteur habituel au cabinet ?
+finance	none	Vos bureaux déménagent-ils toujours en janvier ?
+finance	none	J'aimerais inviter l'équipe du cabinet à notre soirée de lancement produit.
+finance	none	Est-ce que vous faites aussi des formations Excel pour nos assistantes ?
+finance	none	Merci pour votre réactivité ce trimestre, c'est très appréciable.
+marketing	seo	Notre site a perdu la moitié de son trafic Google depuis la dernière mise à jour de l'algorithme. Que s'est-il passé ?
+marketing	seo	Comment choisir les mots-clés pour nos fiches produits alors que les concurrents sont très bien positionnés ?
+marketing	seo	Est-ce que ça vaut encore le coup de faire des articles de blog pour être trouvé sur Google ?
+marketing	seo	bonjour nos pages n'apparaissent pas dans les résultats de recherche malgré le sitemap envoyé
+marketing	ads	Notre coût par clic sur Google Ads a doublé en trois mois, comment optimiser les campagnes ?
+marketing	ads	Avec 3000 € par mois, vaut-il mieux faire de la pub sur Meta ou sur LinkedIn pour du B2B ?
+marketing	ads	Les campagnes Performance Max consomment tout le budget sans conversions, faut-il les couper ?
+marketing	ads	Pouvez-vous auditer nos annonces sponsorisées ? Le taux de clic est ridicule.
+marketing	social_media	Nous voulons lancer notre marque sur TikTok, quel type de contenu publier et à quelle fréquence ?
+marketing	social_media	Un influenceur nous propose une collaboration à 5000 €, comment évaluer si c'est rentable ?
+marketing	social_media	Notre community manager part, pouvez-vous reprendre l'animation d'Instagram et LinkedIn ?
+marketing	social_media	on a 10 000 abonnés mais quasi aucun commentaire ni partage, l'engagement est au point mort
+marketing	emailing	Notre newsletter tombe dans les spams chez Gmail depuis peu, que vérifier ?
+marketing	emailing	Pouvez-vous mettre en place un scénario d'e-mails automatiques pour les paniers abandonnés ?
+marketing	emailing	Quel est un bon taux d'ouverture pour une newsletter B2B et comment l'améliorer ?
+marketing	emailing	Faut-il envoyer notre lettre d'information le mardi matin ou le jeudi soir ?
+marketing	market_research	Avant de lancer notre gamme bio, nous voulons savoir si les 25-35 ans sont prêts à payer plus cher.
+marketing	market_research	Pouvez-vous réaliser une analyse de nos cinq principaux concurrents sur le marché des vélos électriques ?
+marketing	market_research	Nous envisageons de nous implanter en Espagne, quelle est la taille du marché et qui sont les acteurs ?
+marketing	market_research	Comment organiser des entretiens clients pour comprendre pourquoi ils ne renouvellent pas ?
+marketing	branding	Notre logo date de 2005 et fait vieillot, est-ce le moment d'un rebranding complet ?
+marketing	branding	Nous fusionnons deux marques, faut-il garder un nom ou en créer un nouveau ?
+marketing	branding	Pouvez-vous nous aider à définir une charte graphique et un ton de marque cohérents ?
+marketing	branding	nos clients pensent qu'on est une marque premium alors qu'on vise le grand public, comment repositionner l'image ?
+marketing	none	Quels sont vos tarifs journaliers pour une mission de conseil ?
+marketing	none	Nous recrutons un stagiaire marketing, pouvez-vous diffuser l'offre dans votre réseau ?
+marketing	none	Votre agence sera-t-elle fermée entre Noël et le jour de l'an ?
+marketing	none	Merci pour le déjeuner de mardi, c'était très sympathique.
+marketing	none	Pouvez-vous nous renvoyer la facture du mois dernier ? Notre comptable ne la trouve pas.
+automotive	engine	Ma Clio 4 diesel cale au ralenti quand le moteur est chaud et fume noir à l'accélération.
+automotive	engine	La moto ne démarre plus le matin, le démarreur tourne mais le moteur ne prend pas. C'est une MT-07 de 2019.
+automotive	engine	Voyant moteur orange et perte de puissance sur l'autoroute, la voiture est passée en mode dégradé.
+automotive	engine	bonjour ya un claquement métallique au démarrage à froid qui disparaît au bout de 5 min, c'est grave ?
+automotive	brakes	La pédale de frein s'enfonce presque jusqu'au plancher depuis ce matin, je n'ose plus rouler.
+automotive	brakes	Sifflement aigu à chaque freinage alors que les plaquettes ont été changées il y a un mois.
+automotive	brakes	Sur ma 125, le frein arrière est spongieux, faut-il purger le circuit ?
+automotive	brakes	Le volant vibre fort quand je freine à plus de 90 km/h.
+automotive	electrical	Ma batterie se décharge en deux jours quand la voiture ne roule pas, pourtant elle est neuve.
+automotive	electrical	Les phares de ma Golf clignotent tout seuls et le tableau de bord s'éteint par moments.
+automotive	electrical	La clim ne souffle plus froid et un fusible saute régulièrement.
+automotive	electrical	le compteur de ma moto s'est éteint en roulant puis plus rien, même les clignos
+automotive	tires_suspension	La voiture tire vers la gauche depuis que j'ai tapé un trottoir, faut-il refaire le parallélisme ?
+automotive	tires_suspension	Quels pneus 4 saisons me conseillez-vous pour une Peugeot 3008 ?
+automotive	tires_suspension	Bruit de cognement à l'avant droit sur les dos-d'âne, les amortisseurs sont-ils fatigués ?
+automotive	tires_suspension	Mon pneu arrière de moto est usé d'un seul côté, c'est normal ?
+automotive	maintenance	Ma voiture a 60 000 km, que faut-il prévoir pour la prochaine révision et à quel prix ?
+automotive	maintenance	Le contrôle technique est dans trois semaines, pouvez-vous faire une pré-visite ?
+automotive	maintenance	Tous les combien faut-il changer la courroie de distribution sur un moteur 1.5 dCi ?
+automotive	maintenance	vidange + filtres sur un scooter 50cc vous prenez combien ?
+automotive	bodywork	Un chauffard a embouti mon aile arrière sur le parking, pouvez-vous faire un devis pour l'assurance ?
+automotive	bodywork	Petit impact sur le pare-brise, peut-on le réparer ou faut-il le remplacer ?
+automotive	bodywork	La peinture du capot s'écaille et rouille par endroits.
+automotive	bodywork	J'aimerais faire débosseler une portière sans repeindre, c'est possible ?
+automotive	none	Faites-vous de la location de véhicules de courtoisie pendant les réparations ?
+automotive	none	Quels sont vos horaires le samedi ?
+automotive	none	Je voudrais vendre ma voiture, faites-vous des reprises ?
+automotive	none	Merci pour l'accueil et le café pendant l'attente, très pro !
+automotive	none	Est-ce que vous recrutez un apprenti mécanicien pour la rentrée ?
+communication	press	Un journaliste du Parisien veut interviewer notre PDG demain sur les licenciements, comment préparer la réponse ?
+communication	press	Pouvez-vous relire notre communiqué de presse sur la levée de fonds avant envoi aux rédactions ?
+communication	press	Nous voulons constituer un fichier de journalistes spécialisés dans l'agroalimentaire.
+communication	press	comment on organise une conférence de presse pour l'inauguration de l'usine ?
+communication	internal	Comment annoncer aux 800 salariés le déménagement du siège sans créer d'inquiétude ?
+communication	internal	Notre intranet n'est plus consulté, avez-vous des idées pour relancer la communication interne ?
+communication	internal	Nous voulons une lettre mensuelle pour les équipes des sites de production qui n'ont pas d'e-mail.
+communication	internal	La direction souhaite expliquer la nouvelle organisation aux managers avant les équipes.
+communication	crisis	Une vidéo d'un client mécontent contre notre enseigne fait 2 millions de vues depuis hier soir, que faire en urgence ?
+communication	crisis	Rappel produit pour contamination, il faut informer les consommateurs et les médias aujourd'hui.
+communication	crisis	Des salariés ont publié une tribune accusant la direction de harcèlement, comment réagir publiquement ?
+communication	crisis	fuite de données clients ce matin, on doit communiquer quoi et quand ??
+communication	events	Nous organisons un séminaire de 150 personnes en mars, pouvez-vous gérer la logistique et le programme ?
+communication	events	Quel stand prévoir pour notre première participation au salon Vivatech ?
+communication	events	Il faut organiser les 50 ans de l'entreprise avec clients, salariés et élus locaux.
+communication	events	Comment rendre notre convention annuelle plus interactive qu'une suite de présentations ?
+communication	public_speaking	Notre directrice doit parler devant 2000 personnes au congrès, pouvez-vous l'entraîner ?
+communication	public_speaking	Je dois passer au journal télévisé régional la semaine prochaine, un media training est-il possible ?
+communication	public_speaking	Pouvez-vous écrire le discours du président pour les vœux de janvier ?
+communication	public_speaking	j'ai le trac avant chaque réunion plénière, vous avez des coachs en prise de parole ?
+communication	content	Il nous faut un rapport annuel RSE de 40 pages, rédaction et mise en page.
+communication	content	Pouvez-vous rédiger des portraits de collaborateurs pour notre site carrière ?
+communication	content	Nous cherchons un rédacteur pour notre magazine client trimestriel.
+communication	content	Réécriture de la plaquette institutionnelle : le texte actuel est trop technique.
+communication	none	Pouvez-vous me transmettre les coordonnées de votre service comptabilité ?
+communication	none	Votre agence a-t-elle une place de parking pour les visiteurs ?
+communication	none	Bravo pour le prix que votre agence a remporté la semaine dernière !
+communication	none	Je souhaite résilier notre contrat de maintenance du photocopieur.
+communication	none	Est-ce que vos locaux sont accessibles aux personnes en fauteuil ?
+news	sports	Le club lyonnais arrache le match nul dans les arrêts de jeu face au leader du championnat.
+news	sports	Tennis : la jeune Française se qualifie pour son premier quart de finale en Grand Chelem.
+news	sports	Cyclisme : le peloton neutralisé après une chute massive dans la descente.
+news	sports	Mercato : l'attaquant quitte le club pour un transfert record en Arabie saoudite.
+news	economy	L'inflation ralentit à 1,8 % sur un an, selon les chiffres publiés ce matin par l'Insee.
+news	economy	Le constructeur automobile annonce la fermeture de deux usines et 3000 suppressions de postes.
+news	economy	Les marchés européens terminent en baisse, plombés par les valeurs bancaires.
+news	economy	La start-up française de logiciels lève 120 millions d'euros auprès de fonds américains.
+news	science_tech	Des astronomes détectent de la vapeur d'eau dans l'atmosphère d'une exoplanète rocheuse.
+news	science_tech	Le nouveau smartphone pliable promet une autonomie de deux jours.
+news	science_tech	Une équipe de chercheurs parvient à imprimer en 3D un tissu cardiaque fonctionnel.
+news	science_tech	Intelligence artificielle : un modèle capable de prédire la structure de milliers de protéines.
+news	culture	Le festival d'Avignon dévoile une programmation tournée vers la jeunesse.
+news	culture	Le dernier roman de l'autrice, déjà en tête des ventes, sera adapté au cinéma.
+news	culture	Une exposition exceptionnelle consacrée aux impressionnistes ouvre au musée de Lille.
+news	culture	Le groupe de rock annonce une tournée d'adieu dans les stades français.
+news	crime	Un automobiliste interpellé après un refus d'obtempérer dans la banlieue nantaise.
+news	crime	Le procès de l'escroquerie aux faux placements s'ouvre devant le tribunal de Paris.
+news	crime	Collision entre un bus scolaire et un camion : cinq blessés légers.
+news	crime	Braquage d'une bijouterie en plein centre-ville, les suspects toujours en fuite.
+news	environment	Canicule : treize départements placés en vigilance orange à partir de jeudi.
+news	environment	La banquise arctique atteint sa deuxième plus faible superficie jamais mesurée.
+news	environment	Les orages de grêle ont ravagé les vignobles du Bordelais ce week-end.
+news	environment	Pollution de la rivière : les pêcheurs dénoncent une mortalité massive de poissons.
+news	none	Horoscope du jour : les Balance devront faire preuve de patience.
+news	none	Recette : un gratin de courgettes simple et rapide pour ce soir.
+news	none	Mots croisés : la solution de la grille d'hier.
+news	none	Programme télé : ce qu'il ne faut pas manquer ce soir.
+news	none	Courrier des lecteurs : vos réactions à notre dossier de la semaine.
+politics	public_health	Faut-il réguler l'installation des médecins pour lutter contre les déserts médicaux ?
+politics	public_health	Le gouvernement propose de dérembourser certains médicaments pour réduire le déficit de l'Assurance maladie.
+politics	public_health	Les urgences hospitalières ferment la nuit faute de personnel, que comptez-vous faire ?
+politics	public_health	Débat sur l'allongement du délai de carence en cas d'arrêt maladie.
+politics	budget_tax	Le projet de loi de finances prévoit 40 milliards d'économies sur les dépenses publiques.
+politics	budget_tax	Faut-il taxer davantage les très hauts patrimoines pour réduire la dette ?
+politics	budget_tax	La suppression de la taxe d'habitation a-t-elle affaibli les finances des communes ?
+politics	budget_tax	Pourquoi la France emprunte-t-elle désormais plus cher que ses voisins ?
+politics	education	Réforme du baccalauréat : les syndicats d'enseignants dénoncent une surcharge d'épreuves.
+politics	education	Faut-il réduire les effectifs à 15 élèves par classe dans toutes les écoles primaires ?
+politics	education	Monsieur le député, mon fils n'a toujours pas de professeur de mathématiques en novembre, est-ce normal ?
+politics	education	Les frais d'inscription à l'université doivent-ils augmenter pour les étudiants étrangers ?
+politics	security_justice	Le projet de loi prévoit de recruter 10 000 policiers supplémentaires d'ici cinq ans.
+politics	security_justice	La surpopulation carcérale atteint un niveau record, faut-il construire de nouvelles prisons ?
+politics	security_justice	Faut-il généraliser la vidéosurveillance algorithmique dans les transports ?
+politics	security_justice	Les délais de jugement dépassent deux ans dans certains tribunaux, quelles solutions ?
+politics	energy_climate	Relancer la construction de réacteurs nucléaires ou miser sur les énergies renouvelables ?
+politics	energy_climate	La fin de la vente des voitures thermiques en 2035 est-elle tenable ?
+politics	energy_climate	Les agriculteurs protestent contre de nouvelles normes environnementales sur les pesticides.
+politics	energy_climate	Faut-il plafonner les prix de l'électricité pour les ménages cet hiver ?
+politics	labor_pensions	Le report de l'âge légal de départ à la retraite continue de diviser l'opinion.
+politics	labor_pensions	Faut-il durcir les conditions d'indemnisation du chômage quand le marché du travail est tendu ?
+politics	labor_pensions	La semaine de quatre jours devrait-elle être testée dans la fonction publique ?
+politics	labor_pensions	Revalorisation du SMIC : le patronat met en garde contre les effets sur l'emploi.
+politics	foreign_defense	Le Parlement débat de l'augmentation du budget des armées à 2,5 % du PIB.
+politics	foreign_defense	Faut-il élargir l'Union européenne à de nouveaux pays des Balkans ?
+politics	foreign_defense	La France doit-elle maintenir ses bases militaires en Afrique ?
+politics	foreign_defense	Sommet européen : les dirigeants divisés sur l'aide à apporter aux pays voisins en guerre.
+politics	none	Où se trouve le bureau de vote de mon quartier et jusqu'à quelle heure est-il ouvert ?
+politics	none	Comment s'inscrire sur les listes électorales après un déménagement ?
+politics	none	La permanence du député sera fermée pendant les vacances de la Toussaint.
+politics	none	Merci pour votre visite dans notre association de quartier samedi dernier.
+politics	none	Combien de sièges compte l'Assemblée nationale ?
+health	appointment	Bonjour, je souhaiterais avancer mon rendez-vous de jeudi avec le Dr Martin, avez-vous un créneau plus tôt dans la semaine ?
+health	appointment	Je dois annuler mon rendez-vous de demain 9 h chez le dermatologue, désolée pour le délai.
+health	appointment	Premier rendez-vous pour ma fille de 3 ans chez le pédiatre, vous prenez de nouveaux patients ?
+health	appointment	bjr possible d'avoir un rdv avec le kiné cette semaine le soir après 18h ?
+health	reimbursement	La mutuelle ne m'a remboursé que 30 € sur mes lunettes à 450 €, est-ce normal avec ma formule ?
+health	reimbursement	Je n'ai toujours rien reçu de la CPAM pour la consultation du spécialiste d'il y a deux mois.
+health	reimbursement	Comment me faire rembourser une consultation faite à l'étranger pendant les vacances ?
+health	reimbursement	Le dépassement d'honoraires de l'anesthésiste est-il pris en charge par ma complémentaire ?
+health	prescription	Mon traitement contre l'hypertension se termine vendredi, le docteur peut-il renouveler l'ordonnance sans consultation ?
+health	prescription	La pharmacie refuse mon ordonnance car elle a plus de trois mois, pouvez-vous m'en refaire une ?
+health	prescription	Bonjour, j'ai perdu l'ordonnance de kinésithérapie, pourriez-vous m'envoyer un duplicata ?
+health	prescription	Il me faudrait une prescription pour des séances d'orthophonie pour mon fils.
+health	test_results	Le laboratoire m'a dit que mes résultats de prise de sang ont été envoyés au cabinet, le médecin les a-t-il reçus ?
+health	test_results	Pouvez-vous transmettre les résultats de mon IRM au chirurgien avant mon rendez-vous ?
+health	test_results	Je n'arrive pas à télécharger le compte rendu de ma radio sur le portail patient.
+health	test_results	les résultats d'analyse d'urine sont arrivés ? le labo me dit que c'est chez vous
+health	telehealth	Le lien de la téléconsultation ne fonctionne pas, la page reste bloquée sur « en attente du médecin ».
+health	telehealth	Est-ce que la téléconsultation est remboursée comme une consultation au cabinet ?
+health	telehealth	Je suis en déplacement, peut-on transformer mon rendez-vous de mardi en consultation vidéo ?
+health	telehealth	Quelle application faut-il installer pour la visio avec le psychiatre ?
+health	paperwork	J'ai besoin d'un certificat médical de non contre-indication au sport pour l'inscription au club.
+health	paperwork	Ma carte Vitale ne fonctionne plus, comment en obtenir une nouvelle ?
+health	paperwork	Pouvez-vous m'envoyer une attestation de présence pour la consultation d'hier, mon employeur la demande ?
+health	paperwork	Comment déclarer le docteur comme médecin traitant après mon déménagement ?
+health	none	Le parking du centre médical est-il gratuit pour les patients ?
+health	none	Je voulais simplement remercier toute l'équipe pour votre gentillesse.
+health	none	Recrutez-vous une secrétaire médicale à temps partiel ?
+health	none	Le cabinet sera-t-il fermé le lundi de Pentecôte ?
+health	none	Peut-on venir accompagné d'un chien d'assistance dans la salle d'attente ?
+realestate	buying	L'appartement du 3e étage rue Victor-Hugo est-il toujours disponible ? Nous aimerions le visiter samedi.
+realestate	buying	Nous voulons faire une offre à 285 000 € sur la maison de Saint-Herblain, comment la formaliser ?
+realestate	buying	Les diagnostics du bien signalent de l'amiante, faut-il renoncer à l'achat ?
+realestate	buying	première acquisition pour nous, combien de frais de notaire prévoir en plus du prix ?
+realestate	renting	Je cherche un T2 meublé proche de la gare à moins de 750 € charges comprises.
+realestate	renting	Mon dossier de location a été refusé alors que j'ai un garant, pourquoi ?
+realestate	renting	Quelle est la durée du préavis pour quitter un appartement non meublé en zone tendue ?
+realestate	renting	Le propriétaire peut-il augmenter le loyer au renouvellement du bail ?
+realestate	landlord_repairs	La chaudière est en panne depuis une semaine dans l'appartement que je loue par votre agence, personne ne vient.
+realestate	landlord_repairs	Infiltration d'eau au plafond de la salle de bains, qui doit payer la réparation ?
+realestate	landlord_repairs	Les fenêtres ne ferment plus correctement et il fait très froid, le propriétaire est-il obligé de les changer ?
+realestate	landlord_repairs	moisissures partout dans la chambre du petit malgré l'aération, que faire ?
+realestate	valuation	Combien vaut ma maison de 110 m² avec jardin à Rezé ? J'envisage de la vendre au printemps.
+realestate	valuation	Pouvez-vous faire une estimation gratuite de notre appartement avant succession ?
+realestate	valuation	Faut-il refaire la cuisine avant de mettre en vente pour obtenir un meilleur prix ?
+realestate	valuation	Mandat exclusif ou mandat simple pour vendre rapidement ?
+realestate	condominium	Le syndic ne répond jamais au sujet de l'ascenseur en panne depuis un mois.
+realestate	condominium	Je conteste la répartition des charges de chauffage votée à l'assemblée générale.
+realestate	condominium	Comment inscrire une question à l'ordre du jour de la prochaine AG de copropriété ?
+realestate	condominium	Les travaux de ravalement votés vont nous coûter 12 000 €, peut-on étaler le paiement ?
+realestate	mortgage	Avec 3500 € de revenus mensuels, combien puis-je emprunter sur 25 ans ?
+realestate	mortgage	Notre banque propose 3,9 %, pouvez-vous nous trouver un meilleur taux ?
+realestate	mortgage	Est-il intéressant de renégocier mon crédit immobilier contracté il y a deux ans ?
+realestate	mortgage	l'assurance emprunteur nous refuse à cause de mon diabète, quelles alternatives pour le prêt ?
+realestate	none	Votre agence est-elle ouverte le dimanche matin ?
+realestate	none	Je cherche un déménageur fiable dans la région, vous en connaissez ?
+realestate	none	Merci pour votre professionnalisme, nous sommes ravis de notre nouvelle maison.
+realestate	none	Recrutez-vous des agents commerciaux indépendants ?
+realestate	none	Avez-vous des conseils pour décorer un petit salon ?
+itsec	phishing	J'ai reçu un mail de la « DSI » me demandant de confirmer mon mot de passe via un lien bizarre, c'est normal ?
+itsec	phishing	Un faux fournisseur nous demande de changer le RIB pour les prochains virements, le mail semble authentique.
+itsec	phishing	J'ai cliqué sur le lien d'un SMS de livraison et saisi mes identifiants pros, que dois-je faire maintenant ?
+itsec	phishing	mail du PDG qui me demande d'acheter des cartes cadeaux en urgence, je suis pas sûr que ce soit lui
+itsec	malware	Mon PC affiche un message qui demande une rançon et tous mes fichiers ont une extension bizarre.
+itsec	malware	L'antivirus a détecté un cheval de Troie dans une pièce jointe que j'ai ouverte hier.
+itsec	malware	Des fenêtres de publicité s'ouvrent toutes seules et le navigateur a changé de page d'accueil.
+itsec	malware	Le ventilateur de mon portable tourne à fond même au repos et un processus inconnu consomme 90 % du CPU.
+itsec	access	Mon compte Windows est verrouillé après trois essais, je ne peux plus travailler.
+itsec	access	J'ai besoin d'accéder au dossier partagé de la comptabilité pour la clôture, pouvez-vous ouvrir les droits ?
+itsec	access	L'application d'authentification ne génère plus de code depuis que j'ai changé de téléphone.
+itsec	access	nouvelle arrivante lundi, il faut lui créer un compte et une adresse mail svp
+itsec	backup	J'ai supprimé par erreur un dossier entier sur le serveur de fichiers, peut-on le restaurer ?
+itsec	backup	Mes fichiers sur l'ordinateur portable sont-ils sauvegardés automatiquement ?
+itsec	backup	Le fichier Excel sur lequel je travaillais est corrompu, existe-t-il une version d'hier ?
+itsec	backup	Comment vérifier que la sauvegarde nocturne de mon poste s'est bien déroulée ?
+itsec	network	Le Wi-Fi de la salle de réunion du 4e se coupe toutes les dix minutes.
+itsec	network	Impossible de me connecter au VPN depuis mon domicile, le client affiche « délai dépassé ».
+itsec	network	Internet est extrêmement lent sur tout l'open space depuis ce matin.
+itsec	network	L'imprimante réseau n'est plus visible depuis mon poste.
+itsec	lost_device	J'ai oublié mon ordinateur portable professionnel dans le train, il contient des données clients.
+itsec	lost_device	On m'a volé mon téléphone pro dans le métro, il faut le bloquer à distance.
+itsec	lost_device	J'ai perdu mon badge d'accès et ma clé de sécurité USB.
+itsec	lost_device	mon sac avec le PC du boulot a été volé dans ma voiture cette nuit
+itsec	none	Quand aura lieu la formation obligatoire sur le RGPD ?
+itsec	none	Pouvez-vous commander une nouvelle chaise ergonomique pour mon bureau ?
+itsec	none	Merci à l'équipe informatique pour le déménagement réussi ce week-end.
+itsec	none	Le distributeur de boissons du 2e étage avale les pièces.
+itsec	none	Qui organise le pot de départ de Sophie vendredi ?
+ecommerce	product_quality	La poêle a perdu son revêtement antiadhésif après trois semaines, franchement décevant.
+ecommerce	product_quality	Chaussures très confortables, toujours impeccables après un an de randonnée.
+ecommerce	product_quality	La coque s'est fendue au premier choc, plastique de mauvaise qualité.
+ecommerce	product_quality	le mixeur a grillé au bout de 2 utilisations, ça sent le cramé
+ecommerce	delivery	Colis arrivé avec cinq jours de retard et le carton complètement écrasé.
+ecommerce	delivery	Livraison ultra rapide, commandé le soir et reçu le lendemain midi !
+ecommerce	delivery	Le livreur a laissé le colis devant l'immeuble sous la pluie sans sonner.
+ecommerce	delivery	Emballage excessif, un énorme carton pour une petite clé USB.
+ecommerce	customer_service	Le service client a remplacé l'article défectueux sans discuter, très réactif.
+ecommerce	customer_service	Impossible de joindre qui que ce soit après la vente, les mails restent sans réponse.
+ecommerce	customer_service	J'ai dû appeler quatre fois pour obtenir le remboursement promis par le conseiller.
+ecommerce	customer_service	SAV au top, ils m'ont rappelé dans l'heure pour régler le problème.
+ecommerce	value	Pour ce prix-là, on ne peut pas demander mieux.
+ecommerce	value	Beaucoup trop cher pour ce que c'est, on trouve la même chose moitié prix ailleurs.
+ecommerce	value	Rapport qualité-prix imbattable, j'en ai racheté deux.
+ecommerce	value	Correct mais un peu surcoté par rapport aux marques concurrentes.
+ecommerce	description_match	La couleur réelle est beaucoup plus foncée que sur les photos du site.
+ecommerce	description_match	Annoncé en 100 % coton, l'étiquette indique 60 % polyester.
+ecommerce	description_match	Les dimensions ne correspondent pas à la fiche produit, la table est 20 cm plus petite.
+ecommerce	description_match	Exactement comme sur la photo, aucune mauvaise surprise.
+ecommerce	website	Le paiement a échoué trois fois sur le site avant de passer, pas rassurant.
+ecommerce	website	Site clair et commande très simple, même sur mobile.
+ecommerce	website	Impossible d'appliquer mon code promo à l'étape du panier.
+ecommerce	website	la recherche du site ne trouve rien si on fait une faute d'orthographe, pénible
+ecommerce	none	Cadeau pour l'anniversaire de ma sœur, j'espère qu'elle aimera !
+ecommerce	none	Je donnerai mon avis après quelques semaines d'utilisation.
+ecommerce	none	Première commande sur ce site.
+ecommerce	none	Quelqu'un sait si ce modèle existe en version gaucher ?
+ecommerce	none	Commandé pour le mariage de mon frère le mois prochain.

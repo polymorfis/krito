@@ -1,0 +1,159 @@
+{
+  "legal": {
+    "name": "Juridique (avocat, notaire, conseil juridique)",
+    "situation": "des particuliers ou des entreprises qui écrivent à un cabinet d'avocats, une étude de notaire ou un service de conseil juridique",
+    "related": ["realestate", "rh", "finance"],
+    "classes": {
+      "labor": "le droit du travail, un licenciement, un contrat de travail ou un litige avec un employeur",
+      "family": "le droit de la famille, un divorce, une garde d'enfants ou une pension alimentaire",
+      "inheritance": "une succession, un héritage, un testament ou une donation",
+      "consumer": "un litige de consommation avec un commerçant, un artisan ou un fournisseur",
+      "criminal": "le droit pénal, une plainte, une garde à vue ou une infraction",
+      "business": "le droit des sociétés, la création d'entreprise, des statuts ou des associés"
+    }
+  },
+  "programming": {
+    "name": "Programmation et développement logiciel",
+    "situation": "des développeurs qui posent des questions sur un forum technique, à un collègue ou au support d'une plateforme de développement",
+    "related": ["itsec", "support"],
+    "classes": {
+      "runtime_error": "une erreur ou une exception à l'exécution d'un programme",
+      "dependencies": "l'installation d'un outil, la configuration d'un environnement ou un conflit de dépendances",
+      "performance": "la lenteur, la consommation mémoire ou l'optimisation des performances d'un programme",
+      "database": "une base de données, une requête SQL, un schéma ou un ORM",
+      "deployment": "le déploiement, l'intégration continue, les conteneurs ou l'hébergement",
+      "design": "l'architecture logicielle, la conception du code ou les bonnes pratiques"
+    }
+  },
+  "finance": {
+    "name": "Comptabilité et finance d'entreprise",
+    "situation": "des dirigeants de PME, des indépendants ou des salariés qui écrivent à leur expert-comptable, à leur banque ou au service financier",
+    "related": ["support", "legal", "rh"],
+    "classes": {
+      "tax": "la fiscalité, la TVA, l'impôt sur les sociétés ou une déclaration fiscale",
+      "closing": "la clôture des comptes, le bilan, le compte de résultat ou les écritures comptables",
+      "cashflow": "la trésorerie, un prêt, un découvert ou un besoin de financement",
+      "receivables": "les factures clients impayées, les relances ou le recouvrement",
+      "investment": "des placements, des investissements ou la gestion d'un portefeuille",
+      "audit": "un audit, un contrôle fiscal ou une vérification des comptes"
+    }
+  },
+  "marketing": {
+    "name": "Marketing",
+    "situation": "des responsables marketing ou des entrepreneurs qui écrivent à une agence marketing ou à un consultant",
+    "related": ["communication"],
+    "classes": {
+      "seo": "le référencement naturel et la visibilité dans les moteurs de recherche",
+      "ads": "la publicité payante en ligne, les campagnes sponsorisées ou le budget publicitaire",
+      "social_media": "les réseaux sociaux, la gestion de communauté ou les influenceurs",
+      "emailing": "les campagnes d'e-mails, les newsletters ou l'automatisation marketing",
+      "market_research": "une étude de marché, l'analyse de la concurrence ou les attentes des clients",
+      "branding": "l'image de marque, le logo, le positionnement ou l'identité visuelle"
+    }
+  },
+  "automotive": {
+    "name": "Mécanique automobile et moto",
+    "situation": "des automobilistes ou des motards qui écrivent à un garage, un concessionnaire ou un forum de mécanique",
+    "related": [],
+    "classes": {
+      "engine": "le moteur, un bruit moteur, une perte de puissance ou un problème de démarrage",
+      "brakes": "le freinage, les plaquettes, les disques ou le liquide de frein",
+      "electrical": "l'électricité ou l'électronique du véhicule, la batterie, les voyants ou les phares",
+      "tires_suspension": "les pneus, la suspension, les amortisseurs ou la géométrie",
+      "maintenance": "l'entretien courant, la révision, la vidange ou le contrôle technique",
+      "bodywork": "la carrosserie, la peinture, une rayure, une bosse ou un pare-brise"
+    }
+  },
+  "communication": {
+    "name": "Communication d'entreprise et relations publiques",
+    "situation": "des chargés de communication, des dirigeants ou des journalistes qui écrivent à un service communication ou à une agence de relations publiques",
+    "related": ["marketing", "news"],
+    "classes": {
+      "press": "les relations presse, un communiqué de presse ou une demande d'interview",
+      "internal": "la communication interne auprès des salariés, l'intranet ou une lettre interne",
+      "crisis": "une communication de crise, un bad buzz ou une polémique à gérer",
+      "events": "l'organisation d'un événement, d'un salon, d'un séminaire ou d'une conférence",
+      "public_speaking": "la prise de parole en public, un discours ou le media training",
+      "content": "la rédaction de contenus, d'articles, de brochures ou de rapports annuels"
+    }
+  },
+  "news": {
+    "name": "Actualités (titres et extraits d'articles de presse)",
+    "situation": "des titres, des chapeaux ou des extraits d'articles de presse généraliste française",
+    "related": ["politics", "communication"],
+    "classes": {
+      "sports": "le sport",
+      "economy": "l'économie, les entreprises ou les marchés financiers",
+      "science_tech": "les sciences ou les nouvelles technologies",
+      "culture": "la culture, le cinéma, la musique, les livres ou les expositions",
+      "crime": "les faits divers, un accident ou une affaire judiciaire",
+      "environment": "la météo, le climat ou l'environnement"
+    }
+  },
+  "politics": {
+    "name": "Politiques publiques (thèmes du débat public)",
+    "situation": "des extraits de débats, de questions de citoyens à des élus, de programmes ou d'articles sur des politiques publiques, sans nommer de personnalité politique réelle",
+    "related": ["news"],
+    "classes": {
+      "public_health": "la politique de santé publique, l'hôpital ou la sécurité sociale",
+      "budget_tax": "le budget de l'État, la dette publique ou les impôts",
+      "education": "l'éducation, l'école ou l'enseignement supérieur",
+      "security_justice": "la sécurité, la police ou la justice",
+      "energy_climate": "la politique énergétique, la transition écologique ou le climat",
+      "labor_pensions": "le travail, le chômage ou les retraites",
+      "foreign_defense": "les relations internationales, l'Europe ou la défense"
+    }
+  },
+  "health": {
+    "name": "Santé : démarches administratives (cabinet médical, mutuelle)",
+    "situation": "des patients qui écrivent au secrétariat d'un cabinet médical, à un centre de santé ou à leur mutuelle, uniquement pour des démarches administratives et jamais pour demander un diagnostic",
+    "related": ["support"],
+    "classes": {
+      "appointment": "une prise, une modification ou une annulation de rendez-vous médical",
+      "reimbursement": "le remboursement de soins par la sécurité sociale ou la mutuelle",
+      "prescription": "le renouvellement d'une ordonnance ou une prescription",
+      "test_results": "la transmission de résultats d'analyses ou d'examens",
+      "telehealth": "une téléconsultation ou une consultation à distance",
+      "paperwork": "la carte Vitale, une attestation, un certificat médical ou un dossier administratif"
+    }
+  },
+  "realestate": {
+    "name": "Immobilier",
+    "situation": "des particuliers qui écrivent à une agence immobilière, un syndic de copropriété ou un courtier",
+    "related": ["legal", "finance"],
+    "classes": {
+      "buying": "l'achat d'un bien immobilier, une visite ou une offre d'achat",
+      "renting": "la recherche d'une location, un dossier de location ou un bail",
+      "landlord_repairs": "des travaux, une réparation ou un problème dans un logement loué",
+      "valuation": "l'estimation de la valeur d'un bien ou sa mise en vente",
+      "condominium": "la copropriété, le syndic, les charges ou l'assemblée générale",
+      "mortgage": "un crédit immobilier, un taux d'emprunt ou une simulation de prêt"
+    }
+  },
+  "itsec": {
+    "name": "Support informatique et cybersécurité en entreprise",
+    "situation": "des salariés qui écrivent au support informatique (helpdesk) ou à l'équipe sécurité de leur entreprise",
+    "related": ["programming", "support", "rh"],
+    "classes": {
+      "phishing": "un e-mail suspect, une tentative d'hameçonnage ou une arnaque",
+      "malware": "un virus, un logiciel malveillant ou un comportement suspect de l'ordinateur",
+      "access": "un mot de passe, un accès bloqué ou des droits d'accès",
+      "backup": "la sauvegarde ou la restauration de fichiers perdus",
+      "network": "le réseau, le Wi-Fi, le VPN ou la connexion Internet",
+      "lost_device": "la perte ou le vol d'un ordinateur, d'un téléphone ou d'un badge"
+    }
+  },
+  "ecommerce": {
+    "name": "Avis clients e-commerce",
+    "situation": "des avis laissés par des clients sur un site de vente en ligne après un achat",
+    "related": ["support"],
+    "classes": {
+      "product_quality": "la qualité ou la durabilité du produit",
+      "delivery": "la livraison, les délais ou l'emballage",
+      "customer_service": "le service client ou le service après-vente",
+      "value": "le prix ou le rapport qualité-prix",
+      "description_match": "la conformité du produit à sa description ou à ses photos",
+      "website": "l'expérience sur le site, la commande en ligne ou le paiement"
+    }
+  }
+}

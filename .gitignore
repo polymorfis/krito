@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Expériences : caches et modèles entraînés (volumineux)
+experiments/.cache/
+experiments/models/
+experiments/*.log
+.pytest_cache/

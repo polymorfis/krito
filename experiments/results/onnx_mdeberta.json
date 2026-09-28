@@ -1,0 +1,35 @@
+{
+  "model": "mdeberta",
+  "model.onnx@1thr": {
+    "size_mb": 1116.228482,
+    "cold_start_s": 15.257090277000316,
+    "p50_ms_5_options": 405.0605020001967,
+    "rh_accuracy": 0.8666666666666667,
+    "rh_auroc_ood": 0.8986666666666667,
+    "agreement_with_torch": 1.0
+  },
+  "model.onnx@2thr": {
+    "size_mb": 1116.228482,
+    "cold_start_s": 14.953326640000341,
+    "p50_ms_5_options": 228.10940599993046,
+    "rh_accuracy": 0.8666666666666667,
+    "rh_auroc_ood": 0.8986666666666667,
+    "agreement_with_torch": 1.0
+  },
+  "model.int8.onnx@1thr": {
+    "size_mb": 425.131083,
+    "cold_start_s": 7.045465569000044,
+    "p50_ms_5_options": 415.51263899964397,
+    "rh_accuracy": 0.8666666666666667,
+    "rh_auroc_ood": 0.888,
+    "agreement_with_torch": 0.9294117647058824
+  },
+  "model.int8.onnx@2thr": {
+    "size_mb": 425.131083,
+    "cold_start_s": 2.247209844000281,
+    "p50_ms_5_options": 234.08481899969047,
+    "rh_accuracy": 0.8666666666666667,
+    "rh_auroc_ood": 0.888,
+    "agreement_with_torch": 0.9294117647058824
+  }
+}

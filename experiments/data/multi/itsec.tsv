@@ -1,0 +1,605 @@
+label	text	style	verifier_label	agree
+phishing	J'ai reçu un mail de la direction me demandant de régler une facture urgente via ce lien.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Un email de la DRH me demande de cliquer ici pour confirmer mes nouvelles coordonnées bancaires.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Quelqu'un prétend être le service comptable et demande un virement immédiat pour un fournisseur.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Je viens de recevoir une notification de PayPal me disant que mon compte est suspendu, est-ce normal ?	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	J'ai un message de Microsoft me demandant de valider mes informations personnelles sur un site externe.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Un mail anonyme me propose des cartes cadeaux en échange d'un service, je dois faire quoi ?	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	J'ai reçu une demande de l'administrateur me demandant de répondre à un questionnaire confidentiel par mail.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Un message de la banque de l'entreprise me demande de cliquer sur ce bouton pour éviter un blocage.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Est-ce que ce mail de la direction générale concernant une prime exceptionnelle est légitime ?	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	J'ai reçu une alerte de livraison DHL me demandant de payer des frais de douane imprévus.	des messages courts et directs (une phrase), niveau de langue courant	phishing	1
+phishing	Bonjour, je viens de recevoir un message urgent de la part du service de la direction concernant le renouvellement de ma prime de fin d'année. On me demande de vérifier mes coordonnées bancaires immédiatement via ce lien pour éviter tout retard de virement. Pourriez-vous me dire si ce mail est légitime ou s'il s'agit d'une tentative de fraude ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Je suis en train de préparer le dossier pour la conférence de Lyon et je suis un peu stressé par le timing. Un e-mail m'est arrivé à l'instant provenant de 'Service RH' avec une facture de frais de déplacement en pièce jointe. Le message est bizarre et demande de cliquer sur un bouton pour valider un paiement urgent, j'ai un doute.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Ma fille a eu une petite grippe cette semaine et je devais m'absenter un peu ce matin. En revenant devant mon écran, j'ai vu une notification de Microsoft m'informant que mon abonnement Office 365 arrive à expiration et qu'il faut payer une régularisation de 1,50€. Le lien semble étrange et je n'ai pas osé cliquer.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	J'ai passé une très bonne soirée avec l'équipe hier soir au restaurant, l'ambiance était vraiment top. Cependant, je viens de recevoir un message de l'administrateur système me demandant de confirmer mon identité en cliquant sur un lien externe pour une mise à jour de sécurité. Je trouve cela suspect car je n'ai rien demandé.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Le projet Alpha avance bien malgré les quelques retards que nous avons rencontrés le mois dernier. Par contre, j'ai reçu un mail de la part de la comptabilité concernant une erreur sur ma dernière note de frais. On me demande de me connecter sur un portail externe via un lien pour rectifier les montants, est-ce normal ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Je suis actuellement en déplacement à Bruxelles pour rencontrer notre nouveau fournisseur. En ouvrant ma boîte mail, j'ai trouvé un message de 'L'assistance technique' indiquant que ma boîte de réception est pleine et qu'il faut cliquer ici pour libérer de l'espace. Le nom de l'expéditeur ne semble pas correspondre à notre domaine habituel.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	J'ai enfin réussi à terminer la présentation pour le comité de direction ce matin. Entre deux dossiers, j'ai vu passer un mail d'une personne nommée 'Jean de la logistique' me demandant de cliquer sur un lien pour valider une livraison de matériel de bureau. Le message est très pressant et contient des fautes d'orthographe.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Nous avons organisé un petit déjeuner pour l'anniversaire de la boîte ce vendredi. En consultant mes mails, j'ai vu une alerte de 'Nettoyage de messagerie' me demandant de télécharger un document pour supprimer les spams inutiles. Je ne reconnais pas cette procédure et je m'inquiète pour la sécurité de mes données.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Le trajet en train ce matin était particulièrement bondé et je n'ai pas pu travailler sereinement. Je viens de voir une notification concernant un virement de la CAF qui aurait échoué et qui nécessite une action de ma part sur un site tiers. Le lien est très long et ne ressemble pas à un site officiel, je suis méfiant.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	Je suis en train de trier mes dossiers clients pour la fin du trimestre. Un mail urgent vient de tomber de la part de 'Support Facturation' indiquant qu'une erreur de paiement a été détectée sur mon compte employé. On me demande de suivre un lien pour mettre à jour mes informations de paiement immédiatement.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	phishing	1
+phishing	hey j'ai reçu un mail de la direction qui demande de cliquer sur ce lien pour valider mes congés d'été mais c'est bizarre le site ressemble pas a l'intranet...	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	allo je viens de recevoir un message de paypal me disant que mon compte est suspendu et y a un gros bouton pour se reconnecter direct... ca fait peur non	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	regarde ce mail que j'ai eu de la part de l'expert compta il me demande de virer une facture urgente sur ce compte bancaire par virement immediat c'est quoi ce truc	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	pourtant j'ai rien fait mais je viens de recevoir un sms de l'ameli me demandant de mettre a jour mon dossier avec ce lien c'est une arnaque j'crois	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	dis j'ai eu un mail de l'assurance de la boîte qui dit que j'ai un remboursement de 50€ a claim mais faut remplir ce formulaire en ligne c'est louche	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	check ce mail j'ai reçu une convocation pour une formation obligatoire mais le lien va sur un site qui s'appelle pas du tout l'entreprise	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	truc de fou je viens de voir un mail de l'edf me demandant de payer une facture impayée sous 24h sinon ils coupent tout avec un lien vers un site bizarre	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	salut t'as vu le mail qui demande de confirmer tes infos de paie via ce lien externe ? j'ai pas confiance du tout	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	vrai arnaque je viens de recevoir un message disant que j'ai gagné un bon d'achat de 100€ chez Fnac et faut cliquer pour le recupérer	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	hein j'ai reçu un message de la RH avec une pièce jointe qui dit que la politique de bonus a changé mais le nom du fichier c'est nimporte quoi	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	phishing	1
+phishing	"Madame, Monsieur,
+
+Nous vous informons qu'une activité inhabituelle a été détectée sur votre compte de messagerie professionnelle. Afin de sécuriser vos données, nous vous prions de bien vouloir confirmer vos informations personnelles en cliquant sur le lien suivant : [Lien de vérification].
+
+Dans l'attente de votre retour,
+L'équipe de maintenance globale."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Cher collaborateur,
+
+Vous avez reçu une notification de paiement en attente concernant votre dernier achat de fournitures de bureau. Veuillez consulter la facture jointe et procéder au règlement immédiat pour éviter toute interruption de service.
+
+Cordialement,
+Le service comptabilité."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Madame, Monsieur,
+
+Suite à la mise à jour de notre politique de confidentialité, nous vous demandons de valider à nouveau vos préférences de communication en remplissant le formulaire accessible ici : [Lien externe].
+
+Respectueusement,
+Le département des Ressources Humaines."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Bonjour,
+
+Votre prime de fin d'année est désormais disponible pour consultation. Veuillez vous connecter au portail de gestion des primes via l'adresse suivante pour valider le montant de votre bonus : [Lien de connexion].
+
+Bien à vous,
+La Direction Financière."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Madame, Monsieur,
+
+Une tentative de connexion frauduleuse a été identifiée depuis une localisation inconnue (Singapour). Si vous n'êtes pas à l'origine de cette action, veuillez cliquer ici pour annuler la session et protéger votre identité.
+
+Sincères salutations,
+Le centre de sécurité informatique."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Cher client interne,
+
+Vous êtes sélectionné pour participer à notre enquête annuelle sur la satisfaction au travail. En répondant à ce questionnaire, vous recevrez un bon d'achat d'une valeur de 50 euros, disponible via ce lien : [Lien du sondage].
+
+Merci de votre participation,
+Le comité de direction."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Madame, Monsieur,
+
+Nous vous informons que votre abonnement au service de messagerie premium arrive à échéance. Pour éviter toute suppression de vos archives, veuillez renouveler votre abonnement en cliquant sur le bouton ci-dessous.
+
+Cordialement,
+Le service des abonnements."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Bonjour,
+
+Le service juridique vous informe d'une mise en demeure concernant un litige lié à vos droits d'auteur. Vous trouverez le détail des documents à consulter en pièce jointe (document_urgent.zip).
+
+Dans l'attente de votre lecture,
+Le service juridique."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Madame, Monsieur,
+
+Votre compte de fidélité entreprise contient des points qui expirent dans 24 heures. Ne perdez pas l'occasion de les transformer en avantages en vous connectant sur notre plateforme dédiée : [Lien du portail].
+
+Bien cordialement,
+L'équipe de gestion des avantages."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	"Cher collègue,
+
+Une erreur de facturation a été constatée sur votre dernière note de frais. Merci de régulariser la situation en téléchargeant le nouveau justificatif via ce lien sécurisé : [Lien de téléchargement].
+
+Merci de votre compréhension,
+Le service de la gestion des notes de frais."	des e-mails formels avec formule d'appel et formule de politesse	phishing	1
+phishing	Bonjour, je viens de recevoir un message de la direction financière me demandant de régler une facture urgente pour un nouveau fournisseur de fournitures de bureau via ce lien, mais le ton me semble étrange. Est-ce normal ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Je me demande si je peux cliquer sur ce bouton dans l'e-mail de 'Microsoft Security' qui me demande de valider mes préférences de facturation ? L'adresse de l'expéditeur finit par @gmail.com.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Hello, j'ai reçu une notification de la part de la RH concernant un changement de RIB pour le versement des primes de fin d'année, mais le fichier joint est un lien vers un site externe. C'est bon ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Quelqu'un a reçu ce message de la part de la DRH concernant une enquête de satisfaction obligatoire ? On me demande de saisir mes identifiants de session sur une page qui ne ressemble pas à notre intranet.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Je suis tombé sur un message de 'Support Microsoft' disant que mon compte allait être clôturé dans 24h si je ne remplissais pas ce formulaire. Ça me paraît louche, vous pouvez vérifier ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Une personne de la comptabilité m'a envoyé un document via WeTransfer concernant le remboursement des frais de déplacement, mais le mot de passe pour ouvrir le dossier est dans le corps du mail. Je suis méfiant.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Est-ce que vous savez si la campagne de mise à jour des logiciels de messagerie est réelle ? J'ai reçu un mail avec une pièce jointe nommée 'Instructions_Importantes.zip' venant d'un compte externe.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Je viens de recevoir un mail de notre directeur général qui demande de traiter une commande prioritaire pour un client à l'étranger et de ne pas en parler tout de suite. Il demande d'utiliser ce lien pour le paiement.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Bonjour, j'ai reçu une alerte de 'Service Facturation' m'indiquant une anomalie sur mon dernier bulletin de paie et me demandant de cliquer ici pour régulariser la situation. Je ne reconnais pas l'expéditeur.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+phishing	Une demande de virement immédiat vient de tomber sur mon bureau, signée par le service juridique, avec un lien vers un portail de paiement sécurisé. L'URL est très longue et bizarre.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	phishing	1
+malware	Mon ordinateur affiche des fenêtres publicitaires intempestives qui s'ouvrent toutes seules.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	J'ai remarqué que mon processeur tourne à 100% même quand je ne fais rien sur mon PC.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Un message d'alerte rouge est apparu sur mon écran avec un message d'erreur inconnu.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Je pense avoir un malware car mes fichiers PDF ont été renommés avec une extension bizarre.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Le ventilateur de mon portable fait un bruit énorme et l'ordinateur semble s'auto-exécuter.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Certains programmes sur mon bureau ont disparu et de nouveaux icônes suspects sont apparus.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Mon antivirus Windows Defender vient de détecter une menace critique sur le dossier C:/Users.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	La souris bouge toute seule sur mon écran sans que je ne touche au trackpad.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	L'ordinateur de la salle de réunion 3B semble infecté, il y a des pop-ups étranges.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Je viens de voir un processus nommé 'sysupdate.exe' qui consomme énormément de mémoire vive.	des messages courts et directs (une phrase), niveau de langue courant	malware	1
+malware	Je viens d'ouvrir un fichier Excel pour faire mon rapport mensuel sur le bureau de l'agence de Lyon. Tout fonctionnait normalement jusqu'à ce que des fenêtres publicitaires bizarres commencent à s'afficher en boucle sur mon écran. J'ai l'impression qu'un programme malveillant s'est installé sans mon autorisation.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Je travaille sur la présentation de la réunion de demain pour le projet Alpha depuis ce matin. Soudain, mon antivirus a commencé à envoyer des alertes critiques concernant un fichier système corrompu. Il semble qu'un virus soit en train de s'exécuter en arrière-plan sur mon poste.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	En voulant installer la mise à jour de mon logiciel de CAO, j'ai remarqué que la souris bougeait toute seule sur l'écran. C'est vraiment très perturbant car je n'ai touché à rien du tout pendant que je prenais mon café. On dirait que quelqu'un ou quelque chose a pris le contrôle de ma session.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	J'ai passé la matinée à trier les dossiers du service comptabilité pour préparer l'audit annuel. Je viens de remarquer que plusieurs icônes de mes applications habituelles ont disparu et remplacées par des symboles inconnus. Je crains qu'un logiciel malveillant n'ait modifié mes fichiers système.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Je suis en train de rédiger un compte-rendu de réunion dans le salon de détente du bâtiment B. Mon ordinateur fait un bruit de ventilateur très fort et le processeur semble être utilisé à 100% sans raison. J'ai peur qu'un script malveillant ne soit en train de miner de la cryptomonnaie sur ma machine.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Je préparais mon dossier de vacances sur mon poste de travail habituel. Tout à coup, une fenêtre de commande noire est apparue et a commencé à taper du texte très rapidement toute seule. C'est un comportement très suspect qui me fait craindre une infection par un malware.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Après avoir mis à jour mes pilotes Windows ce matin, j'ai remarqué que mon explorateur de fichiers plante systématiquement. De plus, des fichiers de mon dossier 'Documents' semblent avoir été renommés avec une extension bizarre que je ne connais pas. Est-ce qu'un ransomware pourrait être en cause ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Je travaillais sur le budget prévisionnel de l'année prochaine dans mon bureau de Nantes. Depuis une heure, des messages d'erreur incompréhensibles s'affichent en bas à droite de mon écran de manière intempestive. On dirait qu'un processus malveillant tente de s'exécuter en boucle sur mon Windows.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	J'ai fini par terminer la saisie de mes notes de frais juste avant de partir déjeuner. En revenant, j'ai constaté que mon fond d'écran avait été changé pour une image très étrange et que des messages d'alerte de sécurité s'affichaient. Je soupçonne fortement la présence d'un virus sur mon ordinateur.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	Je consultais les rapports de production de l'usine de Mulhouse sur mon terminal. Sans aucune raison, des fichiers système commencent à être supprimés de manière automatique sous mes yeux. Je pense qu'un logiciel malveillant est en train de détruire les données de mon poste.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	malware	1
+malware	truc bizarre sur mon pc, y a plein de fenêtres pub qui s'ouvrent tt seul sans que je clique sur rien.. on peut regarder ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	mon ordi est super lent depuis ce matin, et y a un processus inconnu dans le gestionnaire des tâches qui pompe tout le cpu	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	hello, je crois que j'ai chopé un virus... mes fichiers ont des extensions bizarres genre .crypt et je peux plus rien ouvrir 😱	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	y a un message d'alerte rouge qui s'affiche sur mon écran de verrouillage, ca fait peur j'ai peur d'avoir un malware	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	pc fait nimporte quoi, le ventilateur tourne a fond et l'ecran clignote tout seul, ca me semble pas normal	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	salut l'equipe, j'ai vu une icône strange apparue en bas a droite de ma barre de tache, je connais pas du tout	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	mon windows vient de faire une mise a jour mais direct apres j'ai des popups de pub partout qui disent que je suis infecté	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	helppp mon ordi fait des bruits bizarres et des fenêtres de commande s'ouvrent et se referment hyper vite	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	pourtant j'ai rien fait mais mon antivirus dit que des menaces ont ete detectees sur le dossier documents, c'est quoi ce bordel	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	truc louche sur mon laptop, y a des fichiers qui se suppriment tout seuls dès que je lance excel	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	malware	1
+malware	"Objet : Comportement anormal sur mon poste de travail
+
+Bonjour,
+
+Je vous contacte car mon ordinateur portable semble présenter des dysfonctionnements inhabituels depuis ce matin. Des fenêtres publicitaires intempestives s'ouvrent toutes seules sans aucune action de ma part et le système ralentit considérablement. Pourriez-vous vérifier s'il s'agit d'une infection ?
+
+Cordialement,
+
+Jean Dupont
+Comptabilité"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Alerte sécurité - Logiciel inconnu
+
+Madame, Monsieur,
+
+Je viens de remarquer la présence d'un programme nommé 'SystemUpdate_x86' dans ma barre des tâches, que je n'ai jamais installé. De plus, mon antivirus vient de lancer une alerte de détection de menace sur le dossier Documents. Je reste dans l'attente de vos instructions.
+
+Bien cordialement,
+
+Sophie Martin"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Suspicion d'activité malveillante
+
+Bonjour l'équipe sécurité,
+
+Je constate que mon processeur tourne à 100% de sa capacité même lorsque je n'utilise aucune application, et les ventilateurs de mon unité centrale font un bruit très fort. J'ai l'impression qu'un processus caché consomme toutes les ressources. Serait-il possible de lancer un scan complet de mon poste ?
+
+expéditée depuis le bureau 402,
+
+Marc Lefebvre"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Problème de fichiers cryptés
+
+Bonjour,
+
+Je suis très inquiet car je ne parviens plus à ouvrir mes fichiers Excel et Word habituels. Une icône de cadenas apparaît sur tous mes documents et un message d'erreur s'affiche lors de l'ouverture. Cela ressemble étrangement à un rançongiciel. Merci de m'aider de toute urgence.
+
+Respectueusement,
+
+Lucie Bernard"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Anomalie sur mon poste de travail
+
+Bonjour,
+
+Depuis la mise à jour de ce matin, mon explorateur de fichiers se ferme de manière intempestive et des fichiers système semblent avoir été modifiés sans mon autorisation. Je crains qu'un malware ne soit présent sur la machine. Dans l'attente de votre retour,
+
+Cordialement,
+
+Thomas Durand"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Alerte malware - Détection Windows Defender
+
+Madame, Monsieur,
+
+Je vous informe que Windows Defender a détecté et bloqué une menace de type 'Trojan.Win32' sur mon poste de travail. Bien que la menace soit en quarantaine, je souhaite qu'un technicien vérifie l'intégrité de mon système pour m'assurer qu'aucun autre logiciel malveillant n'a été installé.
+
+Merci d'avance,
+
+Élodie Petit"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Dysfonctionnement grave de l'ordinateur
+
+Bonjour,
+
+Je rencontre des difficultés majeures : mon écran clignote et des lignes de code étranges apparaissent par intermittence sur mon bureau. Ce comportement est apparu juste après avoir utilisé une clé USB que j'ai trouvée dans la salle de réunion. Je préfère couper la machine en attendant votre intervention.
+
+Bien à vous,
+
+Nicolas Roux"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Présence de fichiers suspects
+
+Bonjour,
+
+J'ai trouvé plusieurs fichiers avec des extensions bizarres (.encrypted, .locked) qui ont été créés automatiquement dans mon dossier de travail ce week-end. Je n'ai effectué aucune manipulation particulière. Est-ce un signe d'une attaque par virus ?
+
+Cordialement,
+
+Claire Morel"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Signalement de comportement suspect
+
+Bonjour l'équipe IT,
+
+Je vous signale que mon curseur de souris bouge de manière erratique et s'active tout seul sur l'écran, comme si quelqu'un d'autre contrôlait la machine à distance. C'est très déstabilisant et j'ai peur d'une intrusion logicielle.
+
+Merci de votre aide,
+
+Antoine Lambert"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	"Objet : Alerte sécurité suite à un plantage
+
+Madame, Monsieur,
+
+Mon ordinateur a subi un écran bleu (BSOD) à plusieurs reprises aujourd'hui. Lors du dernier redémarrage, j'ai vu passer un message concernant une erreur critique liée à un pilote suspect. Je soupçonne une infection logicielle profonde.
+
+Dans l'attente de votre diagnostic,
+
+Julie Fontaine"	des e-mails formels avec formule d'appel et formule de politesse	malware	1
+malware	Depuis ce matin, des fenêtres publicitaires s'ouvrent sans arrêt toute seule sur mon bureau, même quand je ne navigue pas sur le web.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Je ne comprends pas pourquoi mon processeur tourne à 100% en permanence et que le ventilateur de mon ThinkPad fait un bruit d'avion, l'ordinateur est devenu hyper lent.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	L'icône de mon antivirus dans la barre des tâches a disparu et je n'arrive plus à lancer l'analyse complète de l'unité C:.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Je viens de remarquer que tous mes fichiers Excel ont été renommés avec une extension bizarre '.crypt' et je ne peux plus les ouvrir.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Un programme nommé 'System_Update_32' est apparu dans ma liste de démarrage et je ne l'ai jamais installé moi-même.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Dès que je branche ma clé USB de la compta, des dossiers se créent et se suppriment de manière erratique sur mon écran.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Mon navigateur affiche un message d'erreur étrange en rouge et semble rediriger systématiquement vers des sites de streaming inconnus.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Il y a un processus inconnu dans le gestionnaire des tâches qui utilise toute la mémoire vive et qui semble bloquer l'exécution de mes logiciels métiers.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	J'ai l'impression que quelqu'un manipule ma souris à distance, le curseur bouge tout seul sur mon écran de travail.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+malware	Une notification système m'indique que l'intégrité de certains fichiers système a été compromise sur mon poste de la direction.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	malware	1
+access	Je n'arrive plus à me connecter à mon compte Salesforce, le système indique que mon mot de passe est incorrect.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Pourriez-vous m'accorder les droits de lecture sur le dossier 'Projet Alpha' partagé sur le serveur ?	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Mon accès à l'application SAP est bloqué suite à trois tentatives infructueuses ce matin.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Bonjour, j'ai besoin d'une extension de mes droits d'accès pour le logiciel Adobe Creative Cloud.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Je viens de réinitialiser mon mot de passe Windows, mais cela ne fonctionne toujours pas sur ma session.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Est-il possible de débloquer mon compte Active Directory ? Il semble être verrouillé.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Il me manque les permissions nécessaires pour modifier les documents dans l'espace SharePoint de l'équipe RH.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	J'ai oublié mon code de session pour l'outil de gestion des congés, pouvez-vous m'aider ?	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Pouvez-vous ajouter mon nom à la liste des utilisateurs autorisés pour la base de données SQL ?	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Mon identifiant de connexion est refusé sur l'interface de messagerie interne.	des messages courts et directs (une phrase), niveau de langue courant	access	1
+access	Bonjour, je travaille actuellement sur le dossier client Dupont depuis mon bureau à Lyon. J'ai essayé de me connecter à l'application de gestion de projet ce matin, mais un message d'erreur s'affiche systématiquement. Il semblerait que mon compte soit bloqué et je ne peux plus rien modifier. Pourriez-vous vérifier mes accès ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Bonjour l'équipe, j'ai un petit souci pour préparer la réunion de demain après-midi avec la direction. J'ai tenté de changer mes identifiants sur le portail RH comme demandé par la procédure, mais je ne me souvi séance plus du nouveau code. Est-il possible de réinitialiser mon mot de passe pour que je puisse accéder à mes documents ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Je suis en train de finaliser le rapport trimestriel sur le dossier partagé du service marketing. Cependant, je remarque que je n'ai plus la possibilité de modifier les fichiers Excel de l'équipe. Je pense que mes droits d'accès ont été modifiés par erreur lors de la dernière mise à jour du serveur.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Hello, j'ai bien reçu votre notification concernant la maintenance informatique de la nuit dernière. Depuis ce matin, je ne parviens plus à ouvrir ma session sur le logiciel de comptabilité interne. Est-ce que mon compte utilisateur est toujours actif ou est-ce que mes droits ont été réinitialisés ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Bonjour, je suis actuellement en déplacement pour le salon professionnel à Paris et j'utilise ma tablette de fonction. Je voulais consulter les nouveaux fichiers clients, mais l'authentification échoue à chaque tentative. Pourriez-vous vérifier si mon accès à la base de données est toujours valide ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	L'équipe de l'agence de Nantes essaie de mettre à jour les dossiers partagés sur le SharePoint. Nous rencontrons un problème de permissions qui nous empêche de supprimer les anciens fichiers. Il semble que nous n'ayons plus les droits d'écriture nécessaires sur ce répertoire spécifique.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Bonjour, je suis de retour de congé et je cherche à reprendre mes activités sur le CRM. J'ai essayé de me logger plusieurs fois mais j'ai reçu une alerte indiquant que mon compte est verrouillé. Serait-il possible de débloquer ma session rapidement pour que je puisse traiter mes emails en attente ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Je travaille sur la mise en place du nouveau module de facturation pour le département logistique. J'ai bien installé les outils nécessaires, mais je n'arrive pas à me connecter à l'interface d'administration. Je soupçonne que mon identifiant n'a pas encore été configuré avec les bons privilèges.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Bonjour, j'ai essayé de suivre la procédure de sécurité pour mettre à jour mes codes de connexion sur l'intranet. Malheureusement, après avoir saisi la nouvelle combinaison, le système ne me reconnaît plus du tout. Est-ce que vous pouvez m'aider à retrouver l'accès à mon espace personnel ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Pour la présentation de ce vendredi, j'ai besoin de consulter les statistiques de vente sur le dashboard interne. J'ai pourtant le même profil que mes collègues, mais je n'ai aucune visibilité sur les modules récents. Pourriez-vous vérifier si mes droits d'accès sont bien configurés pour ce projet ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	access	1
+access	Bonjour, impossible d'ouvrir le dossier RH sur le drive, j'ai plus les droits apparement	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Hey, mon mot de passe de session a expiré et j'arrive pas a en refaire un nouveau, bloqué là	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Slt, j'ai besoin d'un accès pour l'outil de comptabilité stp, merci d'avance	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	C'est quoi le code pour le nouveau logiciel SAP ?? j'arrive pas a me log	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Désolé de déranger mais j'ai mon compte Office 365 qui est verrouillé suite a trop d essais... vous pouvez degeler ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Hello, l'accès au dossier projet Alpha est plus actif pour moi, vous pouvez me redonner les permissions	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	je suis bloqué sur l'authentification double facteur, ca marche plus	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Besoin d'un accès special pour le serveur de test de l'équipe dev, merci	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Slt l equipe, mon login marche plus du tout sur l application interne, svp aidez moi	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	access	1
+access	Madame, Monsieur, Je vous contacte car je ne parviens plus à me connecter à mon compte Salesforce ce matin. Le système m'indique que mon mot de passe a expiré. Pourriez-vous procéder à sa réinitialisation ? Je vous remercie par avance de votre aide. Cordialement, Jean Dupont.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Bonjour l'équipe support, Je rencontre un problème d'accès sur le dossier partagé 'Projet Alpha' situé sur le serveur interne. Il semble que mes droits de lecture aient été révoqués par erreur. Serait-il possible de me redonaman les permissions nécessaires ? Bien cordialement, Marc Lefebvre.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Monsieur, Je vous informe que mon compte Active Directory est actuellement verrouillé suite à plusieurs tentatives infructueuses de ma part. Je sollicite votre intervention pour débloquer mon accès au plus vite. Dans l'attente de votre retour, je vous prie d'agréer mes salutations distinguées, Sophie Martin.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Bonjour, Suite à mon arrivée dans le service Comptabilité, je n'ai pas encore reçu mes identifiants pour l'application SAP. Pourriez-vous vérifier si mon profil utilisateur a bien été configuré dans l'annuaire ? Merci d'avance. Respectueusement, Lucie Bernard.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Madame, Monsieur, Je ne parviens plus à accéder à l'interface de gestion des congés (Espace RH). Un message d'erreur s'affiche concernant mes droits d'authentification. Pourriez-vous examiner ma demande de réaccès ? Cordialement, Thomas Durand.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Bonjour le support, Je vous sollicite car j'ai besoin d'un accès supplémentaire au répertoire 'Archives 2023' pour finaliser un audit. Actuellement, le dossier m'est inaccessible. Merci de faire le nécessaire. Bien à vous, Claire Morel.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Monsieur, Je rencontre des difficultés pour me connecter à la plateforme SharePoint de l'équipe marketing. Mon mot de passe semble ne plus être reconnu par le système malgré plusieurs essais. Pourriez-vous m'aider à résoudre ce problème ? Salutations distinguées, Nicolas Petit.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Madame, Je vous informe que je ne dispose plus des droits d'administration nécessaires sur le logiciel AutoCAD pour effectuer mes modifications de plans. Serait-il possible de mettre à jour mes privilèges sur mon poste ? Je vous remercie. Cordialement, Élodie Roux.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Bonjour, Ma session Windows est bloquée et je ne peux plus lancer aucune application métier. Je soupçonne un problème lié à la politique de sécurité de mon mot de passe. Pourriez-vous intervenir pour déverrouiller mon compte ? Merci de votre retour. Bien cordialement, Pierre Simon.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Monsieur, Je vous contacte car je ne parviens pas à m'identifier sur l'outil de gestion des tickets internes. Le champ 'identifiant' est refusé systématiquement. Pourriez-vous réinitialiser mes accès de sécurité ? Je vous prie d'agréer, Monsieur, l'expression de mes salutations distinguées, Antoine Leroy.	des e-mails formels avec formule d'appel et formule de politesse	access	1
+access	Est-ce que quelqu'un peut vérifier si mon profil a bien été mis à jour pour le dossier Projet Alpha ? Je ne vois pas encore les documents partagés dans le dossier commun.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	J'ai changé mes codes de session hier soir mais le nouveau paramétrage ne semble pas être pris en compte sur l'application RH.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Bonjour, je suis en déplacement à Lyon et je constate que mes privilèges sur l'outil SAP ont été révoqués, je suis bloqué pour valider les commandes.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Pourriez-vous m'aider ? Je suis dans l'impossibilité d'entrer dans l'interface de gestion des congés, un message d'erreur s'affiche dès la première étape.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Suite à mon arrivée dans l'équipe marketing, il me manque toujours les permissions nécessaires pour modifier les contenus sur le CMS de l'entreprise.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Bonjour l'équipe, je tente de me loguer sur l'Intranet mais le champ est grisé et je ne peux même pas taper quoi que ce soit.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Ma session semble avoir été désactivée suite à mes trois tentatives infructueuses de ce matin, pouvez-vous réinitialiser mon profil ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Je n'ai plus la main sur le répertoire 'Comptabilité' pour ajouter de nouveaux fichiers, pouvez-vous me redonner la main sur ce dossier ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+access	Hello, impossible de valider mon étape de validation sur l'outil de workflow, on me dit que mon profil n'est pas autorisé pour cette action.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	access	1
+backup	J'ai accidentellement supprimé le dossier 'Projet_Alpha' de mon disque local, est-il possible de le récupérer ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Pourriez-vous restaurer la version de mon fichier Excel datant d'hier matin avant ma modification ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Je ne retrouve plus mon document Word enregistré dans le dossier partagé du service RH.	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Est-ce que les sauvegardes de la nuit dernière ont bien été effectuées pour le serveur de compta ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Mon fichier PowerPoint est corrompu et je n'arrive pas à l'ouvrir, pouvez-vous m'aider ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	J'ai vidé ma corbeille par erreur et j'ai perdu des fichiers importants sur mon bureau.	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Besoin d'une restauration du répertoire 'Archives_2023' suite à une manipulation erronée.	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Est-il possible de récupérer un fichier que j'avais pourtant sauvegardé sur le OneDrive la semaine dernière ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Je cherche à retrouver une version précédente de mon fichier PDF qui a été écrasée.	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Le fichier de suivi des stocks a disparu du dossier commun, pouvez-vous vérifier la sauvegarde ?	des messages courts et directs (une phrase), niveau de langue courant	backup	1
+backup	Bonjour, je travaille actuellement sur le dossier client 'Dupont' pour l'audit de demain matin. En voulant classer mes documents dans le dossier partagé, j'ai fait une mauvaise manipulation et j'ai supprimé le fichier Excel de synthèse par erreur. Serait-il possible de récupérer une version datant d'hier après-midi ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Je suis en train de finaliser la présentation pour la réunion de direction de vendredi. Malheureusement, après un redémarrage imprévu de mon poste, le document PowerPoint semble avoir été corrompu et ne s'ouvre plus. Est-ce que l'équipe peut tenter une restauration de mon profil utilisateur ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	J'ai passé toute la matinée à mettre à jour les statistiques du rapport annuel sur le serveur. En enregistrant les modifications, le fichier a semblé disparaître de l'arborescence du disque local. Pourriez-vous vérifier si une sauvegarde automatique est disponible sur le cloud ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	La clôture comptable approche et je suis très stressé par la gestion des justificatifs. Je ne retrouve plus le dossier contenant les factures de l'agence de Lyon que j'avais pourtant bien enregistré. Est-il possible de restaurer ces éléments via l'historique des versions ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Je reviens de congés et je dois reprendre le suivi des projets en cours. Je me rends compte qu'un dossier important contenant les plans PDF a été vidé de son contenu suite à une erreur de manipulation sur mon bureau. Est-ce qu'une récupération de données est envisageable sur mon disque dur ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	L'équipe marketing prépare la campagne de l'été et nous avons beaucoup de visuels. Suite à une erreur de synchronisation de mon OneDrive, plusieurs fichiers image ont été effacés de mon ordinateur. Pouvez-vous m'aider à retrouver ces éléments via la sauvegarde serveur ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Je prépare le bilan de fin d'année pour le département RH. En voulant nettoyer mon dossier 'Documents', j'ai accidentellement supprimé le fichier Word contenant les notes de synthèse. Est-ce qu'une restauration de mon espace de travail est possible ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Nous devons envoyer le devis final au client avant la fin de la journée. Je ne vois plus le fichier Excel avec le détail des coûts dans le dossier partagé du projet Alpha. Est-ce que quelqu'un peut vérifier si une sauvegarde récente contient ce document ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Le projet de restructuration avance bien mais je rencontre un petit souci technique. J'ai effectué une modification importante sur un fichier texte, mais après une coupure de courant, le fichier est revenu à sa version initiale. Pourriez-vous restaurer la version enregistrée ce matin ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	Je suis en train de trier les archives du service logistique pour libérer de l'espace. J'ai fait une erreur de sélection et j'ai supprimé par mégarde un sous-dossier contenant les bons de commande de mars. Est-il possible de récupérer ce dossier via le backup informatique ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	backup	1
+backup	salut j'ai fait une erreur sur le dossier projet alpha j'ai ecrasé le fichier excel par erreur... possible de recuperer la version d'hier stp ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	hello l'equipe, je viens de supprimer par inadvertance tout le contenu du dossier 'Clients 2023' sur le drive partagé, qqn peut m'aider a restaurer ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	au secours j'ai perdu mon fichier ppt de la reunion de demain, le pc a ete coupé net pendant la mise a jour, y a une sauvegarde dispo ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	Slt, j'arrive plus a retrouver mon doc word sur le serveur, il etait la ce matin et plus rien. vous pouvez regarder ds les backups svp	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	hello je me suis trompe de dossier et j'ai efface les docs de l'audit... c'est la catastrophe, on peut faire une restauration de l'arborescence ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	pardon je voulai juste dire que j'ai perdu le fichier de config du serveur B, est-ce que vous avez une copie de la semaine derniere ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	hey, mon fichier de suivi de presence a disparu du dossier commun, vous voyez pas une version precedente dans le cloud ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	svp j'ai ecrasé le fichier budget_final_v2 par un vide, j'ai plus rien, c'est possible de revenir en arriere ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	est-ce que vous gardez des backups des fichiers sur le disque Z ? j'ai fait une mauvaise manip et j'ai perdu les dossiers de l'agence lyon	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	backup	1
+backup	Madame, Monsieur, je vous contacte car j'ai accidentellement supprimé un dossier important contenant les comptes-rendus de la réunion de lundi dernier sur mon lecteur partagé. Serait-il possible de procéder à une restauration de ces documents via la sauvegarde du serveur ? Je vous remercie par avance. Cordialement, Jean Dupont.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Bonjour l'équipe support, je me suis rendu compte ce matin que mon fichier Excel de suivi budgétaire est corrompu et que je ne peux plus l'ouvrir. Pourriez-vous vérifier s'il existe une version antérieure non corrompue dans les archives de la semaine dernière ? Dans l'attente de votre retour, Bien à vous, Marie Lefebvre.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Madame, Monsieur, suite à une erreur de manipulation lors de l'archivage, plusieurs dossiers du projet 'Alpha' ont été déplacés dans la corbeille et vidés. J'aurais besoin de votre aide pour récupérer ces données. Je reste à votre disposition pour toute information complémentaire. Salutations distinguées, Pierre Morel.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Bonjour, j'ai un problème urgent : j'ai écrasé par erreur le contenu d'un document Word très important avec une version vide. Est-il possible de restaurer une version datant d'hier soir via la synchronisation OneDrive ? Merci de votre aide. Cordialement, Lucie Bernard.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	À l'attention du service informatique, je ne retrouve plus le répertoire 'Client_2023' qui se trouvait sur mon bureau local. Pouvez-vous vérifier si une sauvegarde automatique a été effectuée sur le cloud récemment ? Je vous remercie de votre assistance. Respectueusement, Thomas Durand.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Monsieur, je sollicite votre intervention pour restaurer l'arborescence de mon dossier de travail qui a disparu suite à une mise à jour système. Il est impératif que je récupère ces fichiers pour finaliser mon rapport. Merci d'avance. Bien cordialement, Sophie Martin.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Bonjour, je rencontre une difficulté pour retrouver mes fichiers de présentation Powerpoint sauvegardés sur le serveur de l'agence de Lyon. Ils semblent avoir été effacés lors du nettoyage des disques. Serait-il possible de les restaurer ? Merci beaucoup. Cordialement, Antoine Leroy.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Madame, Monsieur, suite à une panne de courant, mon fichier de base de données est devenu illisible. Existe-t-il une procédure pour récupérer une copie de sauvegarde datant de moins de 24 heures ? Je vous remercie de votre retour rapide. Sincères salutations, Claire Petit.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	Bonjour, je vous informe que j'ai perdu l'accès à une série de fichiers PDF importants suite à une mauvaise manipulation de mon dossier personnel. Pouvez-vous vérifier les logs de sauvegarde pour une éventuelle récupération ? Merci d'avance pour votre aide. Cordialement, Nicolas Roux.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	À l'équipe support, j'ai supprimé par mégarde un sous-dossier contenant des photos de l'événement annuel de l'entreprise. Je souhaiterais savoir si une restauration est envisageable via le système de backup centralisé. Merci de votre compréhension. Bien à vous, Émilie Fontaine.	des e-mails formels avec formule d'appel et formule de politesse	backup	1
+backup	J'ai fait une mauvaise manipulation hier soir sur le dossier 'Projet_Alpha' et le document principal a disparu de l'arborescence. Est-ce qu'une version de 14h est disponible sur le serveur ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Je ne retrouve plus le compte-rendu de la réunion de lundi dans mon dossier personnel. Pourriez-vous vérifier si une copie est conservée dans l'archive de la semaine dernière ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Bonjour, suite à une mise à jour de mon logiciel de CAO, l'ensemble de mes tracés de la journée ne s'est pas enregistré. Est-il possible de récupérer l'état du fichier tel qu'il était ce matin ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Un collègue a accidentellement supprimé le répertoire partagé du service marketing sur le disque Z:. Nous avons besoin de retrouver les visuels de la campagne de juin.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Est-ce qu'on peut revenir en arrière sur le fichier Excel 'Budget_2024.xlsx' ? J'ai écrasé les données de l'onglet 'Prévisions' par erreur avec une mauvaise macro.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Je suis sur le site de Lyon et je constate que mes fichiers de travail sur le Cloud ne sont plus synchronisés avec mon bureau, j'ai l'impression qu'une partie de mes données a été effacée lors du dernier reboot.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Hello, j'ai vidé ma corbeille par mégarde et j'y avais laissé des documents importants pour le dossier client Durand. Existe-t-il un moyen de les réintégrer sur mon poste ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Le dossier contenant les scans de factures du mois dernier est vide sur le lecteur réseau. Quelqu'un a-t-il pu manipuler les droits ou est-ce qu'une erreur de synchronisation a eu lieu ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Je cherche désespérément le fichier PowerPoint présenté à la direction ce matin, il n'est plus présent dans le dossier 'Presentations_Final'. Pouvez-vous regarder dans les sauvegardes automatiques ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+backup	Suite à un crash de l'application, tout ce que j'ai saisi dans le formulaire de suivi n'est plus là. Y a-t-il un historique de modifications accessible de votre côté ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	backup	1
+network	Je n'arrive pas à me connecter au Wi-Fi de la salle de réunion B.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	La connexion VPN est extrêmement lente depuis ce matin.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Est-ce que le réseau Ethernet est coupé dans l'agence de Lyon ?	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	J'ai des micro-coupures Internet quand je suis en télétravail.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Le signal Wi-Fi est inexistant dans mon bureau au 3ème étage.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Impossible d'établir une session via le client Cisco AnyConnect.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	La bande passante semble saturée sur le segment réseau des invités.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Ma connexion Internet saute toutes les dix minutes.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Le port réseau de mon bureau ne semble pas actif.	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Est-ce qu'il y a une maintenance prévue sur le routeur principal ce soir ?	des messages courts et directs (une phrase), niveau de langue courant	network	1
+network	Je suis actuellement en déplacement professionnel à Lyon pour une conférence importante. J'essaie de me connecter au réseau de l'hôtel depuis ma chambre mais je n'arrive pas à naviguer sur nos outils internes. Est-ce que le tunnel VPN est actuellement opérationnel pour les utilisateurs externes ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Bonjour, j'ai une réunion client très importante sur Teams dans dix minutes. Ma connexion domestique semble instable et j'ai énormément de micro-coupures lors des appels vidéo. Pourriez-vous vérifier s'il y a un incident sur le réseau Wi-Fi de la région ou si cela vient de ma box ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je travaille actuellement dans la salle de réunion B du bâtiment 3 depuis ce matin. Les collaborateurs qui sont arrivés après moi signalent qu'ils ne parviennent pas à se connecter à la borne Wi-Fi de l'étage. Est-ce qu'une maintenance est prévue sur l'infrastructure réseau de cette zone ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	J'ai fini de préparer le rapport mensuel et je souhaite l'envoyer sur le serveur partagé. Malheureusement, la barre de progression de l'upload ne bouge plus du tout et semble figée. J'ai l'impression que ma connexion Internet est extrêmement lente aujourd'hui.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je viens d'arriver au bureau après quelques jours de télétravail et je cherche à synchroniser mes fichiers. Je vois bien le réseau 'Entreprise_Guest' mais je ne parviens pas à joindre le réseau principal. Est-ce que les paramètres de configuration du Wi-Fi ont changé récemment ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je suis en train de télécharger une mise à jour logicielle assez volumineuse pour mon poste de travail. Le téléchargement s'est arrêté brutalement sans aucun message d'erreur explicite. Pourriez-vous vérifier si le débit de ma connexion Ethernet est bridé par le pare-feu ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je tente de me connecter à l'intranet depuis mon ordinateur portable dans la zone cafétéria. Bien que je sois physiquement proche de la box, je n'ai aucun signal réseau disponible. Est-ce qu'il y a un problème de couverture Wi-Fi dans cette partie du bâtiment ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Mon fils utilise la connexion de la maison pour ses cours en ligne et j'ai remarqué des ralentissements sur mes applications métiers. J'ai pourtant redémarré ma box internet sans succès. Est-ce que le service VPN est connu pour être instable lors des pics d'utilisation ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je suis en train de configurer mon nouveau matériel de test pour le projet Alpha. J'ai bien branché le câble RJ45 à mon dock, mais l'icône réseau affiche une croix rouge. Est-ce que les prises réseau du bureau 204 sont bien activées ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Je préparais une présentation pour le comité de direction et je n'arrive plus à accéder aux ressources cloud. Ma connexion semble fonctionner pour la navigation web classique, mais tout ce qui nécessite une passerelle sécurisée échoue. Pouvez-vous vérifier l'état de la connexion VPN ?	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	network	1
+network	Salut, ca marche pas du tout le wifi dans la salle de reunion B, y a plus de signal...	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	le vpn veut rien savoir depuis ce matin, je suis bloqué dessus	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	Hello, la connexion internet est super lente sur le poste 4, ca rame trop pour charger les fichiers	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	estce que vous savez si y a une panne de reseau sur le site de lyon ??	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	Arrivé au bureau mais impossible de se connecter au wifi corp, ca tourne en boucle	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	le vpn connect mais y a aucune page qui charge, c'est normal ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	y a un probleme avec la box dans l'open space ? ca saute tout le temps	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	hello je capte pas le reseau sans fil dans mon bureau, pourtant j'etai pret avant	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	svp le vpn bug de ouf, j'arrive meme pas a ouvrir outlook	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	ca marche pas le net sur le wifi visiteur non ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	network	1
+network	"Bonjour,
+
+Je vous contacte car je rencontre des difficultés pour me connecter au Wi-Fi de l'agence de Lyon ce matin. Le réseau s'affiche comme disponible mais l'authentification échoue systématiquement. Pourriez-vous vérifier si une maintenance est en cours sur ce site ?
+
+Cordialement,
+Marc Lefebvre"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Madame, Monsieur,
+
+Je vous informe que la connexion Internet est extrêmement instable dans la salle de réunion B depuis le début de la matinée. Les appels en visioconférence sont hachés, ce qui rend nos échanges impossibles. Serait-il possible de faire un diagnostic de la ligne ?
+
+Dans l'attente de votre retour, je vous prie d'agréer mes salutations distinguées.
+Sophie Durand"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Bonjour l'équipe support,
+
+Je ne parviens plus à établir de tunnel VPN depuis mon domicile ce matin. Le client AnyConnect semble s'initialiser mais la connexion expire après quelques secondes avec un message d'erreur de timeout. Est-ce un problème de configuration globale ?
+
+Merci d'avance pour votre aide.
+Julien Morel"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Monsieur,
+
+Depuis mon arrivée au bureau, je constate que le débit de la connexion filaire (Ethernet) est anormalement bas. Je ne parviens même pas à charger les documents sur le SharePoint. Pourriez-vous vérifier l'état du switch de mon étage ?
+
+Bien cordialement,
+Claire Petit"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Bonjour,
+
+Je rencontre des micro-coupures incessantes sur le réseau Wi-Fi de l'open space. Cela impacte directement mon travail sur les applications cloud. Serait-il possible de vérifier l'état des bornes de l'aile Nord ?
+
+Respectueusement,
+Thomas Bernard"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"À l'attention de l'équipe réseau,
+
+Je vous signale que le réseau invité est inaccessible pour nos prestataires externes aujourd'hui. Le SSID ne semble plus diffuser correctement. Pourriez-vous regarder ce qui se passe ?
+
+Je vous remercie par avance.
+Lucas Garcia"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Madame,
+
+Je vous sollicite car ma connexion VPN ne parvient pas à récupérer l'adresse IP interne, ce qui m'empêche d'accéder aux serveurs de l'entreprise. Le problème persiste malgré plusieurs redémarrages de ma box personnelle. Merci de m'indiquer la marche à suivre.
+
+Cordialement,
+Élodie Roux"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Bonjour,
+
+Nous avons constaté une déconnexion massive de tous les équipements Wi-Fi dans l'entrepôt de la zone industrielle. Les terminaux de lecture de codes-barres ne parviennent plus à communiquer avec le serveur central. Un problème de portée ou de panne de borne est à craindre.
+
+Dans l'attente de votre intervention,
+Nicolas Simon"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Bonjour l'équipe IT,
+
+Serait-il possible de vérifier la latence du réseau sur le segment 10.2.x ? Nous observons des délais de réponse très élevés sur nos applications métiers, ce qui ralentit considérablement la production.
+
+Merci de votre retour.
+Antoine Leroy"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	"Madame, Monsieur,
+
+Je ne parviens plus à me connecter au réseau sans fil de l'entreprise malgré l'utilisation de mes identifiants habituels. Le réseau semble fonctionner pour mes collègues de bureau, mais mon ordinateur est incapable de joindre la passerelle.
+
+Je vous remercie de votre assistance.
+Camille Fontaine"	des e-mails formels avec formule d'appel et formule de politesse	network	1
+network	Est-ce que quelqu'un peut regarder pourquoi la borne dans la salle de réunion B est éteinte ? On n'arrive pas à se connecter pour la présentation de 14h.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Depuis mon retour de congés, j'ai énormément de lenteurs quand j'essaie de travailler depuis chez moi, c'est quasiment inutilisable.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Je suis actuellement en déplacement à Lyon et je n'arrive pas à établir le tunnel nécessaire pour accéder aux serveurs de l'agence.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	La signalétique est très faible dans l'espace cafétéria, on perd la connexion dès qu'on s'éloigne du bureau de la direction.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Y a-t-il une maintenance prévue sur l'infrastructure globale ce soir ? Les débits sont extrêmement bas sur le site de Nanterre.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Je n'ai plus aucun flux vers l'application métier quand je ne suis pas physiquement au bureau.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Le signal est très instable dans l'aile ouest, j'ai des micro-coupures toutes les cinq minutes.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	Est-ce que le port Ethernet de mon poste de travail est bien actif ? La petite diode ne s'allume même pas.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	J'ai un message d'erreur indiquant que la passerelle n'est pas disponible sur mon terminal portable.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+network	C'est impossible de charger la moindre page web sur mon poste, même avec le câble branché directement à la prise murale.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	network	1
+lost_device	Je viens de me rendre compte que j'ai oublié mon badge à la cafétéria ce matin.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Bonjour, mon iPhone 13 a disparu de mon sac dans le métro pendant le trajet.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	On m'a volé mon ordinateur portable Dell lors de mon déplacement hier soir à Lyon.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Je ne retrouve plus ma tablette Samsung, je l'ai probablement laissée dans la salle de réunion B.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Ma carte d'accès ne fonctionne plus, je pense l'avoir égarée en sortant du bureau.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Urgent : mon téléphone professionnel a été dérobé dans mon sac à main ce matin.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	J'ai perdu mon MacBook Pro dans le train entre Paris et Marseille.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Est-il possible de bloquer mon badge car je ne le retrouve plus du tout ?	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Je pense avoir laissé mon smartphone sur le comptoir du restaurant ce midi.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Mon ordinateur de fonction a été volé dans mon domicile durant la nuit.	des messages courts et directs (une phrase), niveau de langue courant	lost_device	1
+lost_device	Je suis actuellement en déplacement à la gare de Lyon pour un rendez-vous client important. En cherchant mes billets de train dans mon sac, je me suis rendu compte que mon smartphone Android ne s'y trouvait plus. Je pense l'avoir fait tomber dans le métro juste avant d'arriver.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Ce matin, j'ai pris le café avec l'équipe marketing dans le hall de l'immeuble. En repartant vers mon bureau, j'ai remarqué que ma sacoche n'était plus sur mon épaule comme d'habitude. Je crains d'avoir égaré mon ordinateur portable Dell pendant le trajet.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Je reviens de mes vacances en Bretagne et je suis en train de défaire mes valises. En vérifiant mes affaires de bureau, je réalise que mon badge d'accès magnétique a disparu de mon portefeuille. Je ne sais plus si je l'ai laissé dans l'avion ou dans la voiture.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	La journée a été particulièrement chargée avec l'organisation du séminaire de l'entreprise. En nettoyant ma table de travail avant de partir ce soir, je n'ai pas retrouvé mon iPhone 13. Il était pourtant bien là ce matin en arrivant.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Je suis en train de préparer ma présentation pour la réunion de direction de demain matin. Je cherche désespérément l'adaptateur et le clavier que j'avais laissés dans mon sac de voyage. Malheureusement, je viens de constater que mon MacBook Pro a été volé dans le taxi.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Je me suis arrêté faire quelques courses après le travail pour éviter les embouteillages. En sortant du supermarché, j'ai réalisé que j'avais oublié ma pochette contenant mon badge de sécurité et mes clés. Je l'ai pourtant bien en main en quittant le magasin.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Il y a eu beaucoup de mouvement dans l'open space cet après-midi à cause de la livraison de nouveaux mobiliers. J'étais occupé à ranger mes dossiers et je ne me suis pas rendu compte de ce qui s'est passé. Je viens de voir que mon téléphone portable a disparu de mon bureau.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Je suis actuellement dans le train de nuit pour rejoindre la filiale de Lyon. En essayant de travailler un peu, je me suis aperçu que mon sac à dos était resté ouvert sous le siège. Je pense que mon ordinateur de fonction est tombé pendant que je descendais à la station précédente.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	J'ai passé toute la matinée à la cafétéria avec les nouveaux arrivants pour faire connaissance. C'était un moment très convivial mais un peu bruyant. En rentrant à mon poste, je me suis rendu compte que mon téléphone Samsung n'était plus dans ma poche.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Le trajet de ce matin a été très chaotique avec les retards fréquents sur la ligne 4. Je suis arrivé au bureau avec beaucoup de retard et assez stressé par la situation. Je viens de m'apercevoir que mon badge d'identification ne se trouve plus dans mon porte-clés.	des messages longs (3 à 5 phrases) avec du contexte personnel ; le vrai sujet n'apparaît qu'au milieu ou à la fin	lost_device	1
+lost_device	Salut, je crois ke j'ai perdu mon badge de bureau dans le train ce matin... vous pouvez faire qquch ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Hello l'equipe, je viens de me rendre compte que mon iphone est plus dans mon sac. Je pense ke je l'ai laissé au resto hier soir. C'est grave ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Alerte ! On vient de nous voler l'ordi portable de Julie dans le hall. C'est un Dell Latitude. Faut bloquer l'accès svp	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Désolé de vous embeter mais j'ai perdu mon telephone pro sur le parking. Je sais plus trop quoi faire	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Hey, j'ai plus mon badge d'accès, je l'ai pas trouvé en rentrant chez moi ce soir. Quelqu'un peut m'en refaire un ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Urgent : vol de materiel. Mon ipad est disparue du bureau pendant la pause dej. Merci de faire le nécessaire	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	pardon je me suis trompe de personne... mais en fait j'ai perdu mon sac avec l'ordi dedans dans le metro. aidez moi pls	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Hello, mon portable corp est disparu, je pense l'avoir laissé dans le taxi. C'est possible de le localiser ou de le delister ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Salut, j'ai plus mon badge de l'entrepôt, je l'ai perdu qq part dans la rue. C'est possible de m'en fournir un nouveau ?	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	Je viens de voir que mon laptop est plus dans mon bureau, je pense ke quelqu'un l'a pris ou je l'ai oubliée qq part	un style SMS ou messagerie instantanée : familier, abréviations, fautes d'orthographe, peu de ponctuation	lost_device	1
+lost_device	"Objet : Déclaration de perte de badge d'accès
+
+Madame, Monsieur,
+
+Je vous informe par la présente que j'ai égaré mon badge d'accès au bâtiment B lors de mon trajet ce matin. Serait-il possible d'en commander un nouveau dans les plus brefs délais ?
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Jean Dupont"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Vol de matériel informatique - Urgent
+
+Bonjour l'équipe sécurité,
+
+Je vous contacte pour vous signaler le vol de mon ordinateur portable Dell Latitude survenu dans le train entre Lyon et Paris cette nuit. Le vol a eu lieu aux alentours de 22h. J'ai déjà contacté la police pour déposer plainte.
+
+Cordialement,
+
+Claire Martin"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Perte de téléphone professionnel
+
+Madame, Monsieur,
+
+Je vous informe que j'ai perdu mon smartphone Samsung Galaxy durant mon déplacement client ce week-end. Je ne parviens plus à le localiser via l'application de suivi.
+
+Dans l'attente de vos instructions pour la suite de la procédure, je vous prie de recevoir mes sincères salutations.
+
+Marc Lefebvre"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Signalement de perte de matériel
+
+Bonjour,
+
+Je vous contacte car je me suis rendu compte que j'avais oublié mon iPad Pro dans le café situé en face de l'agence. Je n'ai pas pu le récupérer avant la fermeture.
+
+Merci d'avance pour votre aide.
+
+Sophie Durand"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Vol de sac contenant du matériel
+
+À l'attention du service sécurité,
+
+Je vous informe que mon sac de travail a été dérobé dans les transports en commun ce matin. Il contenait mon ordinateur portable ainsi que mon badge de sécurité.
+
+Je reste à votre disposition pour toute information complémentaire.
+
+Bien cordialement,
+
+Lucas Bernard"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Perte de clé de sécurité et badge
+
+Madame, Monsieur,
+
+Je vous écris pour vous signaler la perte de mes clés USB de secours ainsi que de mon badge d'accès aux zones sécurisées du site de Nanterre.
+
+Je vous remercie par avance de faire le nécessaire pour la désactivation de l'ancien badge.
+
+Respectueusement,
+
+Élodie Petit"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Déclaration de vol de téléphone
+
+Bonjour,
+
+Je vous informe par ce mail que mon iPhone 13 a été volé dans mon sac à main lors de mon trajet de retour hier soir. 
+
+Je vous prie d'agréer, l'équipe IT, mes salutations distinguées.
+
+Thomas Roux"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Perte de matériel de mobilité
+
+Madame, Monsieur,
+
+Je vous informe avoir égaré ma tablette Lenovo lors d'un déplacement professionnel à Marseille. Je crains qu'elle ne soit plus récupérable.
+
+Je vous prie d'agréer mes salutations distinguées.
+
+Julie Morel"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Disparition de badge d'accès
+
+Bonjour,
+
+Je me suis aperçu ce matin que mon badge d'accès ne se trouvait plus dans ma poche après ma séance de sport. Pouvez-vous procéder à son invalidation immédiate ?
+
+Cordialement,
+
+Nicolas Fontaine"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	"Objet : Vol d'ordinateur portable
+
+Madame, Monsieur,
+
+Je vous informe du vol de mon MacBook Pro survenu dans mon domicile durant mon absence ce week-end. Le matériel contient des données sensibles liées au projet Alpha.
+
+Je vous prie de bien vouloir prendre les mesures de sécurité nécessaires.
+
+Sincères salutations,
+
+Camille Lambert"	des e-mails formels avec formule d'appel et formule de politesse	lost_device	1
+lost_device	Je viens de sortir du métro et je me rends compte que mon sac n'est plus sur mon épaule. Il contenait mon matériel de travail habituel.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Bonjour, j'ai laissé mon iPhone sur la table de la cafétéria de l'immeuble B avant de partir en réunion. Est-ce que quelqu'un l'a rapporté au bureau de l'accueil ?	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Je ne retrouve plus l'objet qui me permet d'entrer dans le parking et les zones sécurisées du site de Lyon, je pense l'avoir égaré dans le train ce matin.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Urgent : mon Dell Latitude a disparu de mon bureau pendant ma pause déjeuner. Le bureau n'était pas fermé.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Est-ce que l'équipe sécurité a trouvé un Samsung Galaxy dans la salle de conférence 302 ? Je ne l'ai plus en ma possession depuis tout à l'heure.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Je suis en déplacement à Marseille et je ne retrouve plus mon équipement mobile personnel et professionnel que j'avais dans ma sacoche.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Je pense avoir fait tomber mon pass d'accès entre le parking et l'entrée principale de l'entreprise en arrivant ce matin.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Bonjour, je ne retrouve plus mon iPad Pro dans le hall d'accueil. Il était dans une pochette bleue.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Petit souci, mon matériel de service a disparu de mon domicile pendant que je nettoyais mon bureau ce week-end.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+lost_device	Je viens de réaliser que mon smartphone n'est plus dans ma poche depuis mon trajet en bus ce matin.	des formulations indirectes : le sujet se devine sans reprendre les mots-clés de la description de la catégorie	lost_device	1
+none	Bonjour, j'aimerais savoir à quelle heure ferme le bureau de l'accueil le vendredi soir ? Merci.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Est-ce que l'équipe de sécurité est présente sur le site de Lyon demain ? Je dois passer déposer des documents physiques.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, pourriez-vous m'indiquer l'adresse exacte du nouveau bâtiment de l'extension Nord ? Je ne trouve pas le numéro de rue sur l'annuaire interne.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, je souhaitais savoir si des frais de déplacement sont pris en charge pour les réunions inter-sites ou si nous devons remplir un formulaire spécifique au préalable. Merci d'avance.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, j'ai besoin de contacter le responsable de la logistique pour une commande de fournitures, auriez-vous ses coordonnées directes ?	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Est-ce que le service informatique propose une permanence physique en journée ou faut-il obligatoirement passer par le ticket ?	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, j'ai une question concernant les horaires d'ouverture de la cafétéria de l'entreprise pour la semaine prochaine.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, pourriez-vous me confirmer si le parking réservé aux visiteurs est toujours accessible par l'entrée principale ?	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, j'aimerais connaître le contact du service des ressources humaines pour une question sur les congés. Merci.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Bonjour, je me demandais si le bâtiment B reste ouvert après 20h pour les collaborateurs en horaires décalés. Merci de votre retour.	des questions pratiques (horaires, adresse, accès, tarifs généraux, contact)	none	1
+none	Merci beaucoup pour votre aide rapide sur mon dossier hier.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Juste un petit mot pour vous remercier de la réactivité de l'équipe lors de la mise à jour de ce matin. Super boulot !	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Bravo à toute l'équipe pour la gestion de l'événement de vendredi, c'était parfait.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Un grand merci pour votre professionnalisme et votre patience.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	C'est noté, merci.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Je voulais simplement vous transmettre mes félicitations pour la nouvelle organisation du service, c'est beaucoup plus clair ainsi. Merci !	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Merci encore pour le suivi.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Bien reçu, merci pour l'information.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Un immense merci pour votre soutien constant, vous nous facilitez vraiment la vie au quotidien !	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Merci.	des remerciements, félicitations ou messages de politesse sans demande précise	none	1
+none	Madame, Monsieur, je me permets de vous contacter pour vous proposer nos services de consultance en management de la transition. Nous accompagnons les entreprises de votre secteur dans l'optimisation de leurs processus opérationnels. Seriez-vous disponible pour un court échange téléphonique la semaine prochaine ?	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Bonjour, je suis actuellement à la recherche d'une nouvelle opportunité en tant que développeur Fullstack. Ayant travaillé sur des projets similaires aux vôtres, je pense que mon profil pourrait intéresser votre équipe technique. Vous trouverez mon CV en pièce joinant.	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Objet : Proposition de partenariat - Événement Tech 2024. Nous organisons prochainement un salon dédié à l'innovation numérique et nous serions ravis de compter votre entreprise parmi nos sponsors officiels. Nous pouvons vous envoyer notre dossier de partenariat complet si cela vous intéresse.	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Bonjour l'équipe, je vous transmets ci-joint une proposition commerciale pour le renouvellement de notre parc de fournitures de bureau pour le trimestre à venir. Pourriez-vous l'étudier et me faire un retour sur le budget alloué ?	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	À l'attention du service Achats, nous souhaitons vous proposer une collaboration concernant la gestion de votre flotte de mobilier ergonomique. Notre solution permet de réduire les coûts de maintenance de 15% sur deux ans.	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Bonjour, je souhaiterais vous soumettre ma candidature pour le poste de chef de projet marketing publié sur votre site internet. Mon expérience de 5 ans en agilité pourrait être un atout pour vos futurs lancements de produits.	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Nous avons le plaisir de vous proposer une offre de services personnalisée pour la gestion de votre communication interne. Notre agence spécialise dans la création de contenus engageants pour les salariés en télétravail.	des candidatures, propositions commerciales, sollicitations ou partenariats	phishing	0
+none	Madame, je vous adresse ce mail afin de solliciter un partenariat de visibilité pour notre association étudiante lors de votre prochaine journée portes ouvertes. Nous pourrions discuter des modalités d'échange de services.	des candidatures, propositions commerciales, sollicitations ou partenariats	none	1
+none	Veuillez trouver ci-joint le devis concernant la prestation de nettoyage des locaux pour le mois de juin. Nous restons à votre disposition pour toute modification concernant les horaires d'intervention.	des candidatures, propositions commerciales, sollicitations ou partenariats	none	1
+none	Bonjour, je vous contacte pour proposer une présentation de notre nouvelle solution de gestion de projet agile lors de votre prochaine réunion de service. Cela pourrait grandement faciliter la collaboration entre les pôles créatifs et techniques.	des candidatures, propositions commerciales, sollicitations ou partenariats	none	1
+none	Bonjour, est-ce qu'il serait possible de mettre à jour la version d'Adobe Acrobat sur mon poste ? J'ai besoin de l'outil de signature électronique pour un dossier client.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, je souhaite demander l'installation de l'imprimante située au deuxième étage de l'aile B, je ne la trouve pas dans ma liste de périphériques.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Hello, est-ce que l'équipe IT peut m'aider à configurer mon nouveau casque Bluetooth sur mon poste fixe ? Je n'arrive pas à l'appairer.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, j'ai une question concernant la politique de nommage des dossiers sur le serveur commun. Est-ce qu'il y a une convention précise à respecter pour les projets clients ?	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, je souhaiterais savoir si vous proposez des tutoriels ou des guides pour apprendre à utiliser les fonctions avancées de Microsoft Teams, notamment pour les enregistrements de réunions.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, je rencontre un problème d'affichage avec l'écran externe de mon bureau, la résolution semble très basse et tout est déformé.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Est-ce que quelqu'un peut m'indiquer comment changer la langue par défaut de la suite Office ? Elle est restée en anglais après la mise à jour.	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, j'ai besoin d'installer un plugin spécifique pour Excel afin de générer des rapports de données complexes. Est-ce une procédure que vous pouvez valider ?	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, pourriez-vous me dire si l'utilisation de logiciels de prise de notes externes est autorisée sur les postes de travail de l'entreprise ?	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1
+none	Bonjour, j'ai reçu une notification concernant une mise à jour logicielle système. Est-ce que je peux la lancer maintenant ou est-ce que cela risque de ralentir mon poste pendant ma visioconférence de 14h ?	des messages sur des sujets proches du domaine mais qui ne relèvent d'aucune catégorie listée	none	1

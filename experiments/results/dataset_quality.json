@@ -1,0 +1,110 @@
+{
+  "legal": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 1,
+    "near_gold": 0,
+    "kept": 339,
+    "agree_rate": 0.9941002949852508,
+    "kept_clean": 337
+  },
+  "programming": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 2,
+    "near_gold": 0,
+    "kept": 338,
+    "agree_rate": 1.0,
+    "kept_clean": 338
+  },
+  "finance": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 0,
+    "near_gold": 0,
+    "kept": 340,
+    "agree_rate": 0.9911764705882353,
+    "kept_clean": 337
+  },
+  "marketing": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 1,
+    "near_gold": 0,
+    "kept": 339,
+    "agree_rate": 1.0,
+    "kept_clean": 339
+  },
+  "automotive": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 5,
+    "near_gold": 1,
+    "kept": 334,
+    "agree_rate": 0.9970059880239521,
+    "kept_clean": 333
+  },
+  "communication": {
+    "raw": 331,
+    "exact_dups": 0,
+    "near_dups": 2,
+    "near_gold": 0,
+    "kept": 329,
+    "agree_rate": 0.9969604863221885,
+    "kept_clean": 328
+  },
+  "news": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 2,
+    "near_gold": 1,
+    "kept": 337,
+    "agree_rate": 1.0,
+    "kept_clean": 337
+  },
+  "politics": {
+    "raw": 389,
+    "exact_dups": 0,
+    "near_dups": 0,
+    "near_gold": 0,
+    "kept": 389,
+    "agree_rate": 1.0,
+    "kept_clean": 389
+  },
+  "health": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 9,
+    "near_gold": 5,
+    "kept": 326,
+    "agree_rate": 0.9877300613496932,
+    "kept_clean": 322
+  },
+  "realestate": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 5,
+    "near_gold": 0,
+    "kept": 335,
+    "agree_rate": 1.0,
+    "kept_clean": 335
+  },
+  "itsec": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 3,
+    "near_gold": 0,
+    "kept": 337,
+    "agree_rate": 0.9792284866468842,
+    "kept_clean": 330
+  },
+  "ecommerce": {
+    "raw": 340,
+    "exact_dups": 0,
+    "near_dups": 2,
+    "near_gold": 1,
+    "kept": 337,
+    "agree_rate": 0.973293768545994,
+    "kept_clean": 328
+  }
+}

@@ -1,0 +1,16 @@
+"""Choix du modèle utilisé par les exemples.
+
+Par ordre de priorité :
+1. la variable d'environnement KRITO_MODEL (dossier local ou identifiant Hugging Face Hub) ;
+2. le modèle multi-domaines produit par les expériences du dépôt (experiments/models) ;
+3. le modèle publié sur le Hugging Face Hub.
+"""
+
+import os
+from pathlib import Path
+
+LOCAL = Path(__file__).resolve().parents[1] / "experiments" / "models" / "krito-nli-fr-multi"
+HUB = "polymorfis/krito-nli-fr-multi"
+
+MODEL = os.environ.get("KRITO_MODEL") or (str(LOCAL) if LOCAL.exists() else HUB)
+TEMPLATE = "Ce texte concerne {}."

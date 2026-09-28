@@ -1,0 +1,65 @@
+[project]
+name = "krito"
+version = "0.2.0"
+description = "Décisions typées avec une confiance chiffrée, sur CPU, en open source : un moteur de décision zero-shot basé sur l'inférence en langage naturel (NLI)."
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+keywords = ["nlp", "classification", "zero-shot", "nli", "onnx", "cpu", "french", "français"]
+authors = [
+    { name = "Nicolas METIVIER", email = "nicolas.a.metivier@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+# Backend PyTorch (développement, GPU, fine-tuning)
+torch = [
+    "sentence-transformers>=6.1.0",
+    "torch>=2.14.0",
+    "transformers>=5.17.0",
+]
+# Backend ONNX Runtime, sans PyTorch (serverless)
+onnx = [
+    "huggingface-hub>=0.30",
+    "onnxruntime>=1.30.0",
+    "tokenizers>=0.22",
+]
+
+[project.urls]
+Homepage = "https://github.com/polymorfis/krito"
+Documentation = "https://github.com/polymorfis/krito/tree/main/docs"
+Issues = "https://github.com/polymorfis/krito/issues"
+Changelog = "https://github.com/polymorfis/krito/blob/main/CHANGELOG.md"
+
+[project.scripts]
+krito = "krito.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "krito[torch,onnx]",
+    "pytest>=9.1.1",
+]
+examples = [
+    "fastapi>=0.141.1",
+    "uvicorn>=0.54.0",
+]
+experiments = [
+    "onnx>=1.23.0",
+    "scikit-learn>=1.5",
+]
+site = [
+    "rich>=15.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: tests qui chargent le vrai modèle NLI (lents, nécessitent le cache HF ou le réseau)",
+]
