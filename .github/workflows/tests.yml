@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: uv venv -p ${{ matrix.python }} && uv pip install ".[onnx]" pytest
+      - run: uv venv -p ${{ matrix.python }} && uv pip install ".[onnx,learn]" onnx pytest
       - run: uv run --no-sync pytest -m "not integration" -q

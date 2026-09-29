@@ -53,7 +53,15 @@ Le script :
 engine = KritoEngine.from_onnx("modeles/krito-maboite", hypothesis_template="Ce texte concerne {}.")
 ```
 
-Recalibrez ensuite les garde-fous avec [06_calibration_seuil.py](../examples/06_calibration_seuil.py) : un nouveau modèle a une nouvelle échelle de scores.
+Recalibrez ensuite les garde-fous (`engine.calibrate`, [exemple 06](../examples/06_calibration_seuil.py)) : un nouveau modèle a une nouvelle échelle de scores. Un juge de confiance éventuel est à ré-entraîner aussi.
+
+Avant d'entraîner, contrôlez le fichier annoté (étiquettes, doublons, données personnelles) :
+
+```bash
+uv run python experiments/check_annotations.py mes_messages.csv --taxonomy mes_categories.json
+```
+
+Protocole complet de collecte, d'anonymisation et d'annotation : [donnees-reelles.md](donnees-reelles.md).
 
 ## 3. Comment l'entraînement fonctionne
 
@@ -96,7 +104,18 @@ systemd-run --user --scope -p MemoryMax=9G uv run python experiments/finetune_cu
 
 - **Ne pas écrire les modèles dans un `/tmp` monté en RAM** (tmpfs, fréquent sur les distributions récentes) : chaque Go écrit y consomme un Go de mémoire vive.
 
-## 5. Reproduire les modèles publiés
+## 5. Modèle d'embeddings pour le mode supervisé
+
+`KritoClassifier` peut tourner sans PyTorch avec un modèle d'embeddings exporté une fois en ONNX :
+
+```bash
+uv run python experiments/export_embedder_onnx.py --out modeles/e5-base          # intfloat/multilingual-e5-base
+uv run python experiments/export_embedder_onnx.py --model intfloat/multilingual-e5-small --out modeles/e5-small --int8
+```
+
+Le script vérifie que les embeddings ONNX correspondent à ceux de PyTorch (écart de cosinus < 10⁻³), puis `OnnxEmbedder("modeles/e5-base")` les utilise (pooling moyen et normalisation, préfixe `query: ` pour e5).
+
+## 6. Reproduire les modèles publiés
 
 ```bash
 uv sync --all-groups
@@ -114,16 +133,17 @@ uv run python export_onnx.py --model multi       # export ONNX du modèle 12 dom
 
 Les données générées et vérifiées sont versionnées dans `experiments/data/` : vous pouvez sauter les deux premières étapes.
 
-## 6. Publier un modèle sur le Hugging Face Hub
+## 7. Publier un modèle sur le Hugging Face Hub
 
-Les modèles (plus de 400 Mo) ne vont pas dans git. Publiez le dossier ONNX sur le Hub :
+Les modèles (plus de 400 Mo) ne vont pas dans git. `experiments/publish_hub.py` publie le dossier ONNX sur le Hub avec une fiche de modèle générée (usage, données, résultats, limites, origine et licence) :
 
 ```bash
-hf upload polymorfis/krito-nli-fr-multi experiments/models/krito-nli-fr-multi \
-    --include "model.opt.onnx" "tokenizer.json" "labels.json"
+uv run python experiments/publish_hub.py experiments/models/krito-nli-fr-multi \
+    --repo polymorfis/krito-nli-fr-multi --data-card donnees.md --metrics resultats.json --dry-run
+# relire la fiche, puis relancer sans --dry-run (jeton : `hf auth login` ou HF_TOKEN)
 ```
 
-Ajoutez une fiche de modèle (`README.md`) : origine (`mDeBERTa-v3-base-xnli-multilingual-nli-2mil7`, licence MIT), données d'entraînement, résultats et limites. **Avant de publier**, vérifiez les conditions d'utilisation des LLM qui ont généré ou filtré les données (Gemma, Qwen) : certaines encadrent l'usage de leurs sorties pour entraîner d'autres modèles.
+Seuls les fichiers utiles sont envoyés : la meilleure variante du modèle, `tokenizer.json` et `labels.json`. `--data-card` (description des données d'entraînement) est obligatoire. **Avant de publier**, vérifiez les conditions d'utilisation des LLM qui ont généré ou filtré les données (Gemma, Qwen) : certaines encadrent l'usage de leurs sorties pour entraîner d'autres modèles.
 
 Les utilisateurs chargent ensuite le modèle directement :
 

@@ -14,3 +14,15 @@ HUB = "polymorfis/krito-nli-fr-multi"
 
 MODEL = os.environ.get("KRITO_MODEL") or (str(LOCAL) if LOCAL.exists() else HUB)
 TEMPLATE = "Ce texte concerne {}."
+
+
+def embedder():
+    """Modèle d'embeddings du mode supervisé (exemple 08).
+
+    KRITO_EMBEDDER : dossier ONNX produit par experiments/export_embedder_onnx.py (sans PyTorch) ;
+    sinon, ``intfloat/multilingual-e5-base`` via sentence-transformers (``krito[torch]``).
+    """
+    from krito import OnnxEmbedder, SentenceTransformerEmbedder
+
+    path = os.environ.get("KRITO_EMBEDDER")
+    return OnnxEmbedder(path, threads=4) if path else SentenceTransformerEmbedder()
