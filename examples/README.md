@@ -13,6 +13,7 @@ Tous les exemples tournent **sur CPU**, sans GPU ni PyTorch, avec `krito[onnx]` 
 | [07_oui_non_echelle.py](07_oui_non_echelle.py) | Questions oui/non (`yes_no`) et échelle d'urgence (`scale`). |
 | [08_mode_supervise.py](08_mode_supervise.py) | Taxonomie fixe : `KritoClassifier.fit(exemples)` avec juge de confiance (`krito[learn]` et un modèle d'embeddings). |
 | [09_juge_confiance.py](09_juge_confiance.py) | Juge de confiance : entraîner, calibrer `min_judge_score`, comparer aux seuils classiques (`krito[learn]`). |
+| [10_modele_textcnn.py](10_modele_textcnn.py) | Modèle léger TextCNN livré avec Krito : aucun téléchargement, quelques ms par décision. |
 | [docker_api/](docker_api/Dockerfile) | Image Docker de l'API, testée avec 1 Go de RAM et 2 CPU. |
 | [serverless_lambda/](serverless_lambda/) | Fonction AWS Lambda en image conteneur, testée avec l'émulateur officiel. |
 

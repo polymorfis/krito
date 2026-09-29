@@ -12,7 +12,6 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "numpy>=2.0",
-    "psutil>=7.2.2",
 ]
 
 [project.optional-dependencies]
@@ -41,7 +40,7 @@ Changelog = "https://github.com/polymorfis/krito/blob/main/CHANGELOG.md"
 
 [project.scripts]
 krito = "krito.main:main"
-encoder = "krito.encoder:main"
+krito-textcnn = "krito.textcnn.train:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
@@ -58,6 +57,8 @@ examples = [
 ]
 experiments = [
     "onnx>=1.23.0",
+    "onnxscript>=0.7",
+    "scikit-learn>=1.5",
 ]
 site = [
     "rich>=15.0.0",

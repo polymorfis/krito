@@ -33,15 +33,19 @@ flowchart LR
         B{{Backend}}
         O[OnnxBackend<br/>onnxruntime + tokenizers<br/>CPU, sans PyTorch]
         T[CrossEncoderBackend<br/>PyTorch + sentence-transformers<br/>CPU ou GPU]
+        X[TextCNNBackend<br/>onnxruntime + tokenizers<br/>bi-encodeur puis cross-encodeur]
     end
     subgraph Modeles["Modèles"]
         M1[(Dossier ONNX<br/>model.opt.onnx<br/>tokenizer.json<br/>labels.json)]
         M2[(Hugging Face Hub<br/>modèle NLI PyTorch)]
+        M3[(krito-textcnn-fr<br/>livré dans le paquet)]
     end
     C -->|classify| E
     E --> B
     B --> O
     B --> T
+    B --> X
+    X --> M3
     O --> M1
     T --> M2
     M1 -. téléchargement<br/>depuis le Hub .- M2
@@ -52,6 +56,7 @@ flowchart LR
 | `KritoEngine` | API publique : validation des entrées, application du gabarit, calcul des scores, garde-fous, résultat typé. | `numpy` |
 | `OnnxBackend` | Inférence ONNX Runtime sur CPU. Choisit le meilleur fichier disponible (`model.opt.onnx` > `model.int8.onnx` > `model.onnx`) et avertit en cas de troncature. | `onnxruntime`, `tokenizers`, `huggingface-hub` (extra `krito[onnx]`, environ 154 Mo) |
 | `CrossEncoderBackend` | Inférence PyTorch, utile en développement, sur GPU ou pour tester un modèle du Hub. | `torch`, `transformers`, `sentence-transformers` (extra `krito[torch]`, plusieurs Go) |
+| `TextCNNBackend` | Modèle léger entraîné de zéro ([détails](modele-textcnn.md)) : TextCNN partagé, bi-encodeur qui présélectionne les `top_k` options au-delà de `threshold`, cross-encodeur qui produit les logits (E, C, N). Deux graphes ONNX, chaque texte encodé une fois. | `onnxruntime`, `tokenizers` (extra `krito[onnx]`) |
 | `Backend` (protocole) | Interface d'un backend : `logits(pairs) -> ndarray[n, 3]` au format (E, C, N). Vous pouvez fournir le vôtre. | — |
 | `calibration` | `calibrate` / `evaluate_guardrails` : recherche des seuils sur des décisions annotées (grille de quantiles, précision cible, automatisation maximale). | `numpy` |
 | `ConfidenceJudge` | Juge optionnel : `StandardScaler` + régression logistique sur 6 signaux d'une décision → `judge_score`. Sérialisé en JSON. | `scikit-learn` (extra `krito[learn]`) |
@@ -190,6 +195,7 @@ Toutes les mesures proviennent d'un Intel i7-4770K de 2013 : un serveur actuel f
 ```
 krito/
 ├── src/krito/            bibliothèque (KritoEngine, backends, calibration, juge, mode supervisé)
+│   └── textcnn/          modèle léger : architecture, entraînement, export, backend et modèle livré
 ├── tests/                tests unitaires (faux backend) et d'intégration (vrais modèles)
 ├── examples/             exemples exécutables, Docker, Lambda
 ├── docs/                 cette documentation
@@ -197,6 +203,6 @@ krito/
 │   ├── data/             taxonomie, textes générés et vérifiés, jeux gold
 │   ├── results/          métriques brutes (JSON) et tableaux
 │   └── models/           modèles produits (non versionnés, voir entrainement.md)
-├── benchmarks/           premier benchmark (v0.1)
+├── benchmarks/           benchmarks CPU (dont bench_textcnn.py)
 └── site/                 landing page et captures d'écran reproductibles
 ```

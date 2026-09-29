@@ -20,10 +20,11 @@ Krito s'inspire de l'idée des modèles « System One » popularisée par [Jev d
 | [Manuel d'intégration](docs/integration.md) | Bibliothèque, API Docker, Kubernetes, serverless, dimensionnement, sécurité. |
 | [Architecture](docs/architecture.md) | Fonctionnement interne et diagrammes. |
 | [Entraîner et exporter](docs/entrainement.md) | Fine-tuning sur vos données, export ONNX pour CPU. |
+| [Modèle léger TextCNN](docs/modele-textcnn.md) | Modèle de quelques Mo livré avec Krito, entraîné de zéro : usage, architecture, réentraînement. |
 | [Données réelles](docs/donnees-reelles.md) | Annoter, anonymiser, contrôler et publier un modèle. |
 | [Performances](docs/performances.md) | Tous les chiffres mesurés, leur méthode et leurs limites. |
 | [FAQ](docs/faq.md) | Questions fréquentes. |
-| [Exemples](examples/README.md) | 9 scripts exécutables, une image Docker, une fonction Lambda. |
+| [Exemples](examples/README.md) | 10 scripts exécutables, une image Docker, une fonction Lambda. |
 | [Landing page](site/index.html) | Page de présentation, publiée par GitHub Pages. |
 
 ---
@@ -101,6 +102,14 @@ engine = KritoEngine.from_onnx("chemin/vers/modele", threads=2,
 
 Le dossier doit contenir `model.int8.onnx` (ou `model.onnx`), `tokenizer.json` et `labels.json`. [experiments/export_onnx.py](experiments/export_onnx.py) produit un tel dossier à partir d'un modèle fine-tuné.
 
+### Modèle léger TextCNN, sans téléchargement
+
+```python
+engine = KritoEngine.from_textcnn()   # modèle livré dans le paquet, entraîné de zéro, aucun poids BERT
+```
+
+Un modèle de quelques Mo (TextCNN + bi-encodeur + cross-encodeur), quelques millisecondes par décision sur CPU. Il est moins précis que `krito-nli-fr-multi` sur des catégories jamais vues, et se réentraîne sur vos données en quelques minutes sur CPU (`krito-textcnn`). Chiffres et usage : [docs/modele-textcnn.md](docs/modele-textcnn.md).
+
 ### Traitement par lots, oui/non, échelle
 
 ```python
@@ -158,6 +167,7 @@ uv run krito
 | `judge`               | Juge de confiance optionnel (`ConfidenceJudge`) : ajoute `judge_score` à chaque décision. |
 
 `KritoEngine.from_onnx(model_dir, *, threads=None, **kwargs)` construit un moteur ONNX.
+`KritoEngine.from_textcnn(model_dir=None, *, threads=None, threshold=None, top_k=None, **kwargs)` construit un moteur sur le modèle léger TextCNN (livré par défaut).
 
 #### `engine.classify(context, options, *, threshold=None, min_margin=None, min_entailment=None, min_judge_score=None, temperature=1.0)`
 
@@ -272,6 +282,7 @@ uv run pytest -m integration       # tests avec les vrais modèles (PyTorch et, 
 - [x] Primitives oui/non et échelle ordonnée (`yes_no`, `scale`)
 - [x] Traitement par lots (`classify_batch`, `yes_no_batch`, `scale_batch`)
 - [x] Outillage données réelles : contrôle qualité, accord inter-annotateurs, publication sur le Hub
+- [x] Modèle léger entraîné de zéro, livré dans le paquet (`KritoEngine.from_textcnn`, [docs](docs/modele-textcnn.md))
 - [ ] Données réelles annotées et publication du modèle fine-tuné (protocole : [docs/donnees-reelles.md](docs/donnees-reelles.md))
 
 ## Licence

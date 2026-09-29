@@ -14,7 +14,11 @@
 - API FastAPI : `/classify_batch`, `/yes_no`, `/scale`. Exemples 07 (oui/non, échelle), 08 (mode supervisé), 09 (juge) ; 05 et 06 utilisent les lots et `calibrate`.
 - Extra **`krito[learn]`** (scikit-learn), importé seulement à l'usage : le zero-shot reste à 154 Mo de dépendances.
 
+- **Modèle léger TextCNN** `krito-textcnn-fr`, entraîné de zéro (sans poids pré-entraîné) et livré dans le paquet : `KritoEngine.from_textcnn()`. Backbone TextCNN partagé, bi-encodeur (présélection des `top_k` options au-delà de `threshold`) et cross-encodeur à alignement par attention produisant les 3 logits NLI. Backend ONNX Runtime sans PyTorch (`krito.textcnn.TextCNNBackend`), entraînement et export sur CPU (`krito-textcnn`, `krito.textcnn.train`), étude `experiments/run_textcnn.py`, exemple 10, [docs/modele-textcnn.md](docs/modele-textcnn.md).
+
 ### Changements
+- Les lots ne répartissent plus les options d'un même contexte sur plusieurs appels pour les backends qui le demandent (`needs_whole_contexts`), comme le routage du TextCNN.
+- `psutil` n'est plus une dépendance ; le script `encoder` (module inexistant) est remplacé par `krito-textcnn`.
 - `DecisionResult` gagne le champ `judge_score` (`None` sans juge) ; les résultats sont définis dans `krito.results`.
 
 ## 0.2.0 — 2026-09-28

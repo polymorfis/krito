@@ -228,6 +228,29 @@ class KritoEngine:
         """
         return cls(backend=OnnxBackend(_resolve_model_dir(model_dir), threads=threads), **kwargs)
 
+    @classmethod
+    def from_textcnn(
+        cls,
+        model_dir: str | os.PathLike | None = None,
+        *,
+        threads: int | None = None,
+        threshold: int | None = None,
+        top_k: int | None = None,
+        **kwargs,
+    ) -> KritoEngine:
+        """Moteur sur le modèle léger TextCNN (≈ 6 Mo, entraîné de zéro, aucun téléchargement).
+
+        ``model_dir`` : dossier produit par ``krito-textcnn`` ; par défaut, le modèle
+        ``krito-textcnn-fr`` livré avec Krito. Au-delà de ``threshold`` options, le bi-encodeur
+        ne transmet que les ``top_k`` meilleures au cross-encodeur. Le gabarit d'hypothèse
+        utilisé à l'entraînement est appliqué, sauf si ``hypothesis_template`` est fourni.
+        """
+        from .textcnn import TextCNNBackend
+
+        backend = TextCNNBackend(model_dir, threads=threads, threshold=threshold, top_k=top_k)
+        kwargs.setdefault("hypothesis_template", backend.hypothesis_template)
+        return cls(backend=backend, **kwargs)
+
     # ------------------------------------------------------------------ inférence
 
     def _infer(self, contexts: list[str], hypotheses: list[str], batch_size: int) -> np.ndarray:
@@ -242,6 +265,10 @@ class KritoEngine:
         order = sorted(range(len(contexts)), key=lambda i: len(contexts[i]))
         pairs = [(i, j) for i in order for j in range(n_h)]
         out = np.empty((len(contexts), n_h, 3), dtype=np.float64)
+        if getattr(self.backend, "needs_whole_contexts", False):
+            # Backend qui compare les options d'un même contexte entre elles (routage du
+            # TextCNN) : un appel ne coupe jamais les options d'un contexte.
+            batch_size = max(1, batch_size // n_h) * n_h
         for start in range(0, len(pairs), batch_size):
             chunk = pairs[start:start + batch_size]
             logits = np.asarray(self.backend.logits([(contexts[i], hypotheses[j]) for i, j in chunk]),
