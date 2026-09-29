@@ -38,7 +38,7 @@ Si vous avez besoin de rédiger, de résumer ou de raisonner, utilisez un LLM. P
 ### Et par rapport à Jev (TypeSafe) ?
 Krito partage la même idée, popularisée par [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev) : des décisions typées avec une confiance, plutôt que du texte libre. Krito n'est pas affilié à TypeSafe et nous ne l'avons pas comparé à Jev sur les mêmes données. Les différences de conception :
 - Krito est **open source** et s'exécute **chez vous** ;
-- Krito ne propose aujourd'hui que le choix d'une option (pas encore de primitives oui/non ni d'échelles dédiées) ;
+- Krito propose le choix d'une option, les questions oui/non et les échelles ordonnées, ainsi qu'un mode supervisé pour les taxonomies fixes ;
 - ses modèles sont spécialisés en **français**.
 
 ### Pourquoi ne pas entraîner un classifieur classique (scikit-learn, TF-IDF) ?
@@ -46,7 +46,7 @@ Vous pouvez, et c'est parfois le bon choix. Nos mesures :
 - TF-IDF + régression logistique plafonne à 82 % sur nos tickets de support ;
 - des embeddings + régression logistique atteignent 94 à 95 %, mais seulement pour des **catégories fixées à l'avance** et entraînées.
 
-Krito accepte de **nouvelles catégories à chaque appel**, sans réentraînement, avec une qualité comparable (95 % en moyenne sur 12 domaines).
+Krito accepte de **nouvelles catégories à chaque appel**, sans réentraînement, avec une qualité comparable (95 % en moyenne sur 12 domaines). Et si votre taxonomie est fixe, Krito propose aussi ce mode : `KritoClassifier.fit(exemples)` (embeddings + régression logistique scikit-learn + juge de confiance), avec la même interface de résultat et de garde-fous.
 
 ## Utilisation
 
@@ -73,22 +73,22 @@ Par ordre d'efficacité :
 4. **Fine-tunez** sur quelques centaines de messages annotés (voir [entrainement.md](entrainement.md)). Sur 202 tickets, la précision est passée de 84,7 % à 91,7 %.
 
 ### Comment régler `min_entailment` ?
-Sur **vos** données annotées, avec [l'exemple 06](../examples/06_calibration_seuil.py). L'échelle de la probabilité d'implication dépend du modèle et du gabarit : un seuil qui marche avec un modèle peut tout rejeter avec un autre. 0,5 est un point de départ, pas une vérité.
+Sur **vos** données annotées, avec `engine.calibrate(exemples, options)` ([exemple 06](../examples/06_calibration_seuil.py)). L'échelle de la probabilité d'implication dépend du modèle et du gabarit : un seuil qui marche avec un modèle peut tout rejeter avec un autre. 0,5 est un point de départ, pas une vérité.
 
 ### La confiance est-elle une probabilité fiable ?
-Pas au sens strict. `confidence` est **relative** à vos options : elle reste élevée même si aucune ne convient. `entailment_prob` est **absolue** et bien meilleure pour détecter les hors-sujet (AUROC de 95 à 96 % dans nos tests), mais sa valeur exacte dépend du modèle. Traitez-les comme des **scores à calibrer**, pas comme des pourcentages garantis.
+Pas au sens strict. `confidence` est **relative** à vos options : elle reste élevée même si aucune ne convient. `entailment_prob` est **absolue** et bien meilleure pour détecter les hors-sujet (AUROC de 95 à 96 % dans nos tests), mais sa valeur exacte dépend du modèle. Traitez-les comme des **scores à calibrer**, pas comme des pourcentages garantis. Pour un score plus fiable, entraînez un **juge de confiance** sur vos données (`engine.fit_judge`) : il estime directement la probabilité qu'une décision soit bonne.
 
 ### Un message peut-il avoir plusieurs catégories ?
-Pas en un seul appel : Krito choisit une option. Pour du multi-étiquette, posez une question par catégorie, avec deux options (« le sujet X » / « un autre sujet »), et gardez celles dont la probabilité d'implication dépasse votre seuil.
+Pas avec `classify`, qui choisit une option. Pour du multi-étiquette, posez une question `yes_no` par étiquette (« Le message parle de facturation. ») : chaque réponse est indépendante.
 
 ### Et les questions oui/non ?
-Il n'y a pas encore de primitive dédiée. Contournement : deux options, par exemple `{"oui": "une demande de remboursement", "non": "un autre sujet"}`, et une décision sur `entailment_prob` de l'option « oui ». Une primitive dédiée est dans la feuille de route.
+`engine.yes_no(texte, "Le client demande un remboursement.")` renvoie `answer`, `probability` (P(oui)) et `neutral_prob`. Utilisez `max_neutral` pour ne pas répondre quand le texte ne parle pas du sujet. Pour une gradation (urgence, satisfaction), utilisez `engine.scale` avec des niveaux ordonnés.
 
 ### Que se passe-t-il avec un texte long ?
 Au-delà de 512 tokens (environ 300 à 350 mots), la fin du texte est ignorée et Krito émet un `UserWarning`. Classez plutôt un extrait pertinent : l'objet et le premier paragraphe d'un e-mail, par exemple.
 
 ### Krito est-il utilisable depuis plusieurs threads ?
-Oui. Un même moteur peut être appelé en parallèle (testé avec 8 threads : résultats identiques au séquentiel).
+Oui. Un même moteur peut être appelé en parallèle (testé avec 8 threads : résultats identiques au séquentiel). Pour traiter un grand volume dans un seul processus, utilisez plutôt `classify_batch`.
 
 ## Données, sécurité, conformité
 
@@ -119,10 +119,10 @@ Les obligations dépendent de **l'usage**, pas de l'outil. Classer des tickets d
 
 ### Comment contribuer ?
 Voir [CONTRIBUTING.md](../CONTRIBUTING.md). Les contributions les plus utiles aujourd'hui :
-- des **jeux de test réels anonymisés**, dans de nouveaux domaines ;
+- des **jeux de test réels anonymisés**, dans de nouveaux domaines (protocole : [donnees-reelles.md](donnees-reelles.md)) ;
 - des mesures sur d'autres processeurs (ARM, CPU récents) ;
 - des traductions ;
-- les primitives oui/non et échelle.
+- des mesures des primitives oui/non et échelle sur des données annotées.
 
 ### Où signaler un bug ?
 Dans les *issues* GitHub : <https://github.com/polymorfis/krito/issues>. Pour une faille de sécurité, suivez [SECURITY.md](../SECURITY.md).

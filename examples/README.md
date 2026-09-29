@@ -1,6 +1,6 @@
 # Exemples
 
-Tous les exemples tournent **sur CPU**, sans GPU ni PyTorch, avec `krito[onnx]`.
+Tous les exemples tournent **sur CPU**, sans GPU ni PyTorch, avec `krito[onnx]` (plus `krito[learn]` pour les exemples 08 et 09). L'exemple 08 utilise `KRITO_EMBEDDER` (dossier produit par `experiments/export_embedder_onnx.py`) ou, à défaut, `intfloat/multilingual-e5-base` via PyTorch.
 
 | Exemple | Ce qu'il montre |
 |---|---|
@@ -8,8 +8,11 @@ Tous les exemples tournent **sur CPU**, sans GPU ni PyTorch, avec `krito[onnx]`.
 | [02_garde_fous.py](02_garde_fous.py) | Automatiser ce qui est sûr, envoyer le reste en revue humaine. |
 | [03_multi_domaines.py](03_multi_domaines.py) | Router en deux étapes (service puis catégorie), sans entraînement. |
 | [04_api_fastapi.py](04_api_fastapi.py) | Exposer Krito en API HTTP avec documentation interactive. |
-| [05_traitement_csv.py](05_traitement_csv.py) | Traiter un fichier CSV et marquer ce qui part en revue humaine. |
-| [06_calibration_seuil.py](06_calibration_seuil.py) | Calibrer les garde-fous sur vos données annotées. |
+| [05_traitement_csv.py](05_traitement_csv.py) | Traiter un fichier CSV par lots (`classify_batch`) et marquer ce qui part en revue humaine. |
+| [06_calibration_seuil.py](06_calibration_seuil.py) | Calibrer les garde-fous sur vos données annotées (`engine.calibrate`), puis les vérifier sur d'autres exemples. |
+| [07_oui_non_echelle.py](07_oui_non_echelle.py) | Questions oui/non (`yes_no`) et échelle d'urgence (`scale`). |
+| [08_mode_supervise.py](08_mode_supervise.py) | Taxonomie fixe : `KritoClassifier.fit(exemples)` avec juge de confiance (`krito[learn]` et un modèle d'embeddings). |
+| [09_juge_confiance.py](09_juge_confiance.py) | Juge de confiance : entraîner, calibrer `min_judge_score`, comparer aux seuils classiques (`krito[learn]`). |
 | [docker_api/](docker_api/Dockerfile) | Image Docker de l'API, testée avec 1 Go de RAM et 2 CPU. |
 | [serverless_lambda/](serverless_lambda/) | Fonction AWS Lambda en image conteneur, testée avec l'émulateur officiel. |
 
@@ -36,7 +39,7 @@ Mesures sur un Intel i7-4770K (2013), modèle `krito-nli-fr-multi` en ONNX optim
 | 02 | 2 messages traités automatiquement, 2 hors-sujet envoyés en revue humaine. |
 | 03 | 4 routages corrects sur 4 avec des descriptions concrètes ; seulement 2 sur 4 avec des intitulés vagues (« informatique », « rh »). |
 | 05 | 20 messages en 3,6 s (182 ms par message) : 14 traités automatiquement, 6 en revue humaine. Une erreur passe en automatique (« code promo non appliqué » classé *commercial*). |
-| 06 | Sur 290 tickets de support jamais vus à l'entraînement : 90 % de précision en traitant 74 % des messages automatiquement. 95 % n'est pas atteignable sans fine-tuning sur le domaine. |
+| 06 | Version 0.2 (grille fixe, 290 tickets de support jamais vus) : 90 % de précision en traitant 74 % des messages automatiquement ; 95 % n'est pas atteignable sans fine-tuning sur le domaine. La version 0.3 calibre sur une moitié et vérifie sur l'autre : chiffres à remesurer. |
 | API Docker | Prête en 2,9 s ; environ 700 Mo de RAM sous une limite de 1 Go ; 160 à 280 ms par requête HTTP selon le nombre d'options (3 à 6). |
 | Lambda | Démarrage à froid 1,8 s ; 167 ms par invocation à chaud ; 655 Mo de RAM. |
 

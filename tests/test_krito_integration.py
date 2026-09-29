@@ -137,3 +137,33 @@ def test_onnx_is_thread_safe(onnx_engine):
         got = list(pool.map(lambda t: onnx_engine.classify(t, SUPPORT), texts))
     assert [r.selected_key for r in got] == [r.selected_key for r in expected]
     assert [round(r.confidence, 6) for r in got] == [round(r.confidence, 6) for r in expected]
+
+
+# ---------------------------------------------------------------- primitives v0.3
+
+
+def test_batch_matches_single(engine):
+    texts = ["Mon colis n'est jamais arrivé.", "J'ai été débité deux fois.", "Mot de passe oublié."]
+    batch = engine.classify_batch(texts, SUPPORT, batch_size=5)
+    single = [engine.classify(t, SUPPORT) for t in texts]
+    assert [r.selected_key for r in batch] == [r.selected_key for r in single]
+    for b, s in zip(batch, single):
+        assert b.confidence == pytest.approx(s.confidence, abs=1e-4)
+
+
+def test_yes_no(engine):
+    yes = engine.yes_no("Je veux être remboursé de ma commande, elle est arrivée cassée.",
+                        "Le client demande un remboursement.")
+    no = engine.yes_no("Merci beaucoup, tout est parfait, je suis ravi !",
+                       "Le client est mécontent.")
+    assert yes.answer is True
+    assert no.answer is False
+
+
+def test_scale(engine):
+    levels = ["pas urgent du tout", "moyennement urgent", "extrêmement urgent"]
+    calm = engine.scale("Quand vous aurez le temps, pourriez-vous m'envoyer la brochure ?", levels,
+                        template="Cette demande est {}.")
+    urgent = engine.scale("URGENT : notre site de production est en panne, nous perdons des clients !", levels,
+                          template="Cette demande est {}.")
+    assert urgent.expected > calm.expected

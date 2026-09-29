@@ -1,5 +1,8 @@
 """Traitement d'un fichier CSV : chaque ligne reçoit une décision, ou part en revue humaine.
 
+Les messages sont traités par lots (``classify_batch``) : les paires (message, option) sont
+regroupées en appels au modèle, ce qui est plus rapide qu'un appel par message.
+
     uv run python examples/05_traitement_csv.py examples/data/messages.csv resultats.csv
 """
 
@@ -28,8 +31,9 @@ def main(src: str, dst: str) -> None:
     with open(src, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     t0 = time.perf_counter()
-    for row in rows:
-        r = engine.classify(row["message"], OPTIONS, min_entailment=0.5, min_margin=0.2)
+    results = engine.classify_batch([row["message"] for row in rows], OPTIONS,
+                                    min_entailment=0.5, min_margin=0.2, batch_size=32)
+    for row, r in zip(rows, results):
         row.update(categorie=r.selected_key, confiance=f"{r.confidence:.3f}",
                    decision="auto" if r.accepted else "revue_humaine", motif=r.rejection_reason or "")
     elapsed = time.perf_counter() - t0

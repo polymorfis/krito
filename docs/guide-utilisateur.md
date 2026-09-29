@@ -1,6 +1,6 @@
 # Guide utilisateur
 
-Ce guide explique comment utiliser Krito au quotidien : installer, prendre une première décision, bien écrire ses options, régler les garde-fous et lire les résultats. Pour le fonctionnement interne, voir [architecture.md](architecture.md) ; pour la mise en production, voir [integration.md](integration.md).
+Ce guide explique comment utiliser Krito au quotidien : installer, prendre une première décision, bien écrire ses options, régler les garde-fous, traiter des lots, poser des questions oui/non ou sur une échelle, et apprendre une taxonomie fixe. Pour le fonctionnement interne, voir [architecture.md](architecture.md) ; pour la mise en production, voir [integration.md](integration.md).
 
 ## 1. À quoi sert Krito
 
@@ -26,6 +26,8 @@ Python 3.11 ou plus récent.
 pip install "krito[onnx] @ git+https://github.com/polymorfis/krito"
 # développement : PyTorch, GPU possible (plusieurs Go)
 pip install "krito[torch] @ git+https://github.com/polymorfis/krito"
+# en plus, pour le juge de confiance et le mode supervisé (scikit-learn, ≈ 160 Mo)
+pip install "krito[onnx,learn] @ git+https://github.com/polymorfis/krito"
 ```
 
 Une fois Krito publié sur PyPI, `pip install "krito[onnx]"` suffira.
@@ -110,8 +112,9 @@ Il n'y a pas de limite technique, mais le temps de calcul est proportionnel au n
 | `confidence` | Probabilité **relative** de l'option retenue face aux autres options (la somme vaut 1). |
 | `margin` | Écart de probabilité avec la deuxième option. Une marge faible signale une hésitation entre deux options. |
 | `accepted` | `True` si tous les garde-fous fournis sont satisfaits. |
-| `rejection_reason` | Motif(s) de rejet : `confidence_too_low`, `margin_too_low`, `entailment_too_low`. |
+| `rejection_reason` | Motif(s) de rejet : `confidence_too_low`, `margin_too_low`, `entailment_too_low`, `judge_score_too_low`. |
 | `scores[clé]` | Détail par option : logits bruts `entailment`, `contradiction`, `neutral`, `decision_score`, `probability`, `entailment_prob`. |
+| `judge_score` | Probabilité que la décision soit bonne selon le juge de confiance (`None` sans juge, voir § 6). |
 
 ### Relatif ou absolu ?
 
@@ -138,20 +141,114 @@ Ces valeurs ne sont **qu'un point de départ**. L'échelle des scores dépend du
 
 ### Calibrer sur vos données
 
-1. Annotez 200 à 500 vrais messages (texte + bonne catégorie, `none` pour les hors-sujet).
-2. Lancez [l'exemple 06](../examples/06_calibration_seuil.py) avec votre précision cible :
+1. Annotez 200 à 500 vrais messages (texte + bonne catégorie, `none` pour les hors-sujet). Protocole complet : [donnees-reelles.md](donnees-reelles.md).
+2. Calibrez sur une moitié, vérifiez sur l'autre :
 
-```bash
-uv run python examples/06_calibration_seuil.py mes_messages_annotes.csv 0.90
+```python
+from krito import evaluate_guardrails, load_examples, split_examples
+
+calibration, validation = split_examples(load_examples("mes_messages_annotes.csv"), test_size=0.5)
+
+cal = engine.calibrate(calibration, options, target_precision=0.90)
+print(cal)                 # compromis précision / automatisation, seuils recommandés marqués ◄
+engine.classify(texte, options, **cal.guardrails)    # seuils prêts à l'emploi
+
+resultats = engine.classify_batch([ex.text for ex in validation], options)
+print(evaluate_guardrails(resultats, [ex.label for ex in validation], **cal.guardrails))
 ```
 
-Le script cherche la combinaison `min_entailment` / `min_margin` qui automatise le plus de messages en respectant la précision visée. Sur 290 tickets de support que le modèle n'avait jamais vus, il recommande `min_margin=0.9` : **90 % de précision en traitant 74 % des messages automatiquement**, le reste partant en revue humaine.
+`calibrate` cherche la combinaison de seuils (par défaut `min_entailment` et `min_margin` ; au choix parmi `threshold`, `min_margin`, `min_entailment`, `min_judge_score`) qui **automatise le plus de bonnes décisions** en respectant la précision visée parmi les décisions acceptées, hors-sujet acceptés comptés comme erreurs. Le résultat (`Calibration`) donne `precision`, `coverage` (part des messages acceptés), `automated` (part des messages du domaine traités automatiquement et correctement) et la liste des compromis possibles (`frontier`).
 
-3. Validez le réglage sur un **second** jeu annoté, distinct du premier.
+Ordre de grandeur : sur 290 tickets de support que le modèle n'avait jamais vus, une recherche de ce type (version 0.2 de l'exemple, sur le jeu complet) donnait **90 % de précision en traitant 74 % des messages automatiquement**, le reste partant en revue humaine. En ligne de commande : [l'exemple 06](../examples/06_calibration_seuil.py).
 
-Si la précision visée est inatteignable, le script le dit. Dans ce cas, fine-tunez le modèle sur votre domaine (voir [entrainement.md](entrainement.md)).
+Si la précision visée est inatteignable, `cal.reached` vaut `False` et les seuils renvoyés donnent la meilleure précision possible. Dans ce cas, ajoutez un juge (ci-dessous) ou fine-tunez le modèle sur votre domaine (voir [entrainement.md](entrainement.md)).
 
-## 7. Performances à attendre
+### Juge de confiance (optionnel)
+
+Au lieu de régler plusieurs seuils, un **juge** apprend sur vos données la probabilité qu'une décision soit bonne, à partir de tous ses signaux (confiance, marge, implication absolue, entropie…). Il demande `krito[learn]` (scikit-learn), mais aucun second modèle.
+
+```python
+from krito import ConfidenceJudge
+
+juge_set, reste = split_examples(load_examples("mes_messages_annotes.csv"), test_size=0.6)
+calibration, validation = split_examples(reste, test_size=0.5)
+
+engine.fit_judge(juge_set, options)          # entraîne et attache le juge
+cal = engine.calibrate(calibration, options, target_precision=0.90)   # règle min_judge_score
+engine.judge.save("juge.json")                # quelques centaines d'octets, sans pickle
+
+# en production
+engine = KritoEngine.from_onnx(MODELE, judge=ConfidenceJudge.load("juge.json"), hypothesis_template=...)
+r = engine.classify(texte, options, min_judge_score=0.8)
+```
+
+Le juge doit voir des **erreurs** et des **hors-sujet** pendant son entraînement, sinon il n'a rien à apprendre (erreur explicite). Entraînez-le, calibrez son seuil et mesurez sur trois jeux distincts ([exemple 09](../examples/09_juge_confiance.py)). Un juge est propre à un modèle, un gabarit et un jeu d'options : refaites-le si l'un d'eux change.
+
+## 7. Traiter beaucoup de textes : les lots
+
+Toutes les primitives existent en version par lots : `classify_batch`, `yes_no_batch`, `scale_batch`. Elles renvoient une liste de résultats **dans l'ordre reçu**, identiques à des appels un par un, mais regroupent les paires (texte, option) en appels au modèle de `batch_size` paires, en rapprochant les textes de longueurs voisines pour limiter le remplissage.
+
+```python
+resultats = engine.classify_batch(messages, options, min_entailment=0.5, batch_size=32)
+auto = [(m, r.selected_key) for m, r in zip(messages, resultats) if r.accepted]
+```
+
+Sur CPU, `batch_size` entre 16 et 64 est un bon compromis ; plus grand consomme plus de mémoire sans gain notable. Sur GPU, augmentez-le.
+
+## 8. Questions oui/non et échelles
+
+### Oui / non
+
+```python
+r = engine.yes_no("Je veux être remboursé, le produit est arrivé cassé.",
+                  "Le client demande un remboursement.", max_neutral=0.8)
+r.answer        # True
+r.probability   # P(oui)
+r.neutral_prob  # élevée si le texte ne dit rien sur l'affirmation
+```
+
+- Formulez la question comme une **affirmation complète** : elle est utilisée telle quelle (le `hypothesis_template` du moteur ne s'applique pas).
+- `probability` compare implication et contradiction. Si le texte ne parle pas du sujet, les deux sont faibles et la réponse est arbitraire : c'est ce que détecte `max_neutral`.
+- Garde-fous : `threshold` (confiance minimale dans la réponse, oui ou non) et `max_neutral`.
+- **Plusieurs étiquettes par message** : posez une affirmation par étiquette ; chaque réponse est indépendante.
+
+### Échelle ordonnée
+
+```python
+URGENCE = ["pas urgente du tout", "peu urgente", "urgente", "extrêmement urgente"]
+r = engine.scale(message, URGENCE, template="Cette demande est {}.")
+r.selected_key  # niveau le plus probable
+r.index         # son rang (0 = premier niveau)
+r.expected      # rang moyen pondéré par les probabilités, ex. 2,4
+r.spread        # écart-type en niveaux
+```
+
+Les niveaux se donnent **dans l'ordre**, du plus bas au plus haut (liste, ou dict `{clé: description}`). `template` remplace le gabarit du moteur pour cette échelle. Le résultat (`ScaleResult`) est un `DecisionResult` complet, avec en plus `index`, `expected` et `spread`.
+
+Sur une échelle, hésiter entre deux niveaux voisins n'est pas grave : `expected` en tient compte (utile pour trier par urgence), et le garde-fou `max_spread` ne rejette que les distributions vraiment étalées (hésitation entre « pas urgent » et « très urgent »).
+
+## 9. Taxonomie fixe : le mode supervisé
+
+Si vos catégories ne changent pas et que vous avez au moins une trentaine d'exemples par catégorie, `KritoClassifier` apprend directement la taxonomie : des embeddings (`multilingual-e5-base` par défaut) et une régression logistique scikit-learn. Il est plus rapide que le zero-shot (un seul passage du texte, quel que soit le nombre de catégories) et souvent plus précis sur votre domaine (95 % sur le support dans l'[étude 1](../experiments/RESULTS.md)).
+
+```python
+from krito import KritoClassifier, OnnxEmbedder
+
+clf = KritoClassifier(OnnxEmbedder("modeles/e5-base")).fit(entrainement)   # ou KritoClassifier() avec krito[torch]
+r = clf.classify("Mon colis n'est jamais arrivé.", min_judge_score=0.8)
+clf.save("classifieur.npz")
+clf = KritoClassifier.load("classifieur.npz")      # recrée l'embedder à partir de sa référence
+```
+
+- `fit` accepte des couples `(texte, catégorie)`, des dicts ou `{catégorie: [textes]}`. Les hors-sujet (`None` / `"none"`) ne deviennent pas une catégorie : ils apprennent au juge à les rejeter.
+- Un **juge** est entraîné automatiquement par validation croisée (`judge=False` pour s'en passer).
+- Garde-fous : `threshold`, `min_margin`, `min_similarity` (similarité au plus proche exemple d'entraînement de la catégorie retenue, qui rejette les hors-sujet), `min_judge_score`. `clf.calibrate(exemples)` les règle, sur des exemples **distincts** de ceux de `fit`.
+- Sans PyTorch : exportez le modèle d'embeddings une fois avec `experiments/export_embedder_onnx.py`.
+- Pour ajouter une catégorie, il faut ré-entraîner (quelques secondes) ; c'est la contrepartie par rapport au zero-shot.
+
+Exemple complet : [08_mode_supervise.py](../examples/08_mode_supervise.py).
+
+## 10. Performances à attendre
 
 Sur un processeur de 2013 (Intel i7-4770K), avec le modèle `krito-nli-fr-multi` et 6 options :
 
@@ -163,22 +260,24 @@ Sur un processeur de 2013 (Intel i7-4770K), avec le modèle `krito-nli-fr-multi`
 
 La latence est à peu près proportionnelle au nombre d'options. Détails et méthodologie : [performances.md](performances.md).
 
-## 8. Limites à connaître
+## 11. Limites à connaître
 
 - **Français d'abord.** Les modèles fine-tunés sont entraînés en français. Le modèle de base est multilingue, mais nous n'avons pas mesuré les autres langues.
 - **Textes courts à moyens.** Au-delà de 512 tokens (environ 350 mots), la fin du texte est ignorée, avec un avertissement (`UserWarning`). Pour un long document, classez le passage pertinent (objet de l'e-mail et premier paragraphe, par exemple).
-- **Une décision à la fois.** Krito choisit une seule option. Pour un message qui porte sur plusieurs sujets, appelez `classify` une fois par question oui/non (voir la [FAQ](faq.md)).
+- **Un seul choix par `classify`.** Pour un message qui porte sur plusieurs sujets, posez une question `yes_no` par sujet (§ 8).
 - **Données synthétiques.** Les modèles et les chiffres publiés proviennent de données écrites par des LLM. Les ordres de grandeur sont fiables, mais les chiffres absolus sont probablement optimistes. Validez sur vos propres messages.
 - **La confiance n'est pas une garantie.** Même acceptée, une décision peut être fausse (exemple réel : « code promo non appliqué » classé *commercial* au lieu de *facturation*). Gardez une revue humaine sur une partie du flux et suivez le taux d'erreur.
 
-## 9. Dépannage
+## 12. Dépannage
 
 | Symptôme | Cause probable | Solution |
 |---|---|---|
 | `FileNotFoundError: Aucun modèle ONNX` | Dossier de modèle incomplet. | Il faut `model.opt.onnx` (ou `model.int8.onnx` ou `model.onnx`), `tokenizer.json` et `labels.json`. |
 | `ValueError: Le modèle doit être un NLI à 3 classes` | Modèle à 2 classes (`entailment` / `not_entailment`) ou non NLI. | Utilisez un modèle NLI à 3 classes. |
 | `UserWarning: … tronquées` | Texte trop long. | Raccourcissez le texte, ou classez-en un extrait. |
-| Tous les messages sont rejetés | Seuil `min_entailment` trop haut pour ce modèle ou ce gabarit. | Calibrez (section 6), ou vérifiez que le gabarit ressemble à ceux de l'entraînement. |
+| Tous les messages sont rejetés | Seuil `min_entailment` trop haut pour ce modèle ou ce gabarit. | Calibrez (§ 6), ou vérifiez que le gabarit ressemble à ceux de l'entraînement. |
+| `ImportError: … krito[learn]` | Juge ou mode supervisé sans scikit-learn. | `pip install "krito[learn]"`. |
+| `ValueError: Le juge a besoin de bonnes ET de mauvaises décisions` | Exemples trop faciles pour entraîner un juge. | Ajoutez des hors-sujet et des cas limites. |
 | Beaucoup d'hésitations entre deux options | Options qui se recouvrent. | Précisez les descriptions ou fusionnez les options. |
-| Latence élevée | Trop d'options, ou un seul thread. | `threads=2` à `4` ; routage en deux étapes. |
+| Latence élevée | Trop d'options, ou un seul thread. | `threads=2` à `4` ; routage en deux étapes ; `classify_batch` pour les traitements en masse ; mode supervisé si la taxonomie est fixe. |
 | RAM plus élevée que prévu | Chargement de `model.int8.onnx` au lieu de `model.opt.onnx`. | Générez `model.opt.onnx` (voir [entrainement.md](entrainement.md)). |

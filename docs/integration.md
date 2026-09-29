@@ -40,7 +40,9 @@ Bonnes pratiques :
 - **Un seul moteur par processus.** Le chargement coûte environ 2 s et 710 Mo ; les appels suivants ne coûtent que l'inférence.
 - **Le moteur est sûr en multithread.** Un même `KritoEngine` peut être appelé depuis plusieurs threads (testé avec 8 threads concurrents : résultats identiques au séquentiel).
 - **`threads`** fixe le nombre de cœurs utilisés **par appel**. Sur un serveur qui traite beaucoup de requêtes en parallèle, préférez plusieurs processus avec `threads=1` ou `2`, plutôt qu'un seul processus avec beaucoup de threads.
-- **Traitement par lots** : voir [05_traitement_csv.py](../examples/05_traitement_csv.py). Environ 180 ms par message avec 6 options et 4 threads.
+- **Traitement par lots** : `ENGINE.classify_batch(messages, options, batch_size=32)` regroupe les paires en appels au modèle et conserve l'ordre ; voir [05_traitement_csv.py](../examples/05_traitement_csv.py). L'API HTTP d'exemple expose `/classify_batch`, `/yes_no` et `/scale`.
+- **Seuils et juge** : calibrez hors ligne (`engine.calibrate`, `engine.fit_judge`), puis déployez les seuils en configuration et le juge en fichier JSON (`ConfidenceJudge.load`). Le juge demande `krito[learn]` (scikit-learn, environ 160 Mo de plus) ; sans juge, le zero-shot n'en a pas besoin.
+- **Taxonomie fixe** : `KritoClassifier` (mode supervisé) avec `OnnxEmbedder` tourne aussi sans PyTorch ; le fichier `.npz` du classifieur fait quelques Mo.
 
 ### Écrire son propre backend
 

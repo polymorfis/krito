@@ -53,8 +53,22 @@ flowchart LR
 | `OnnxBackend` | Inférence ONNX Runtime sur CPU. Choisit le meilleur fichier disponible (`model.opt.onnx` > `model.int8.onnx` > `model.onnx`) et avertit en cas de troncature. | `onnxruntime`, `tokenizers`, `huggingface-hub` (extra `krito[onnx]`, environ 154 Mo) |
 | `CrossEncoderBackend` | Inférence PyTorch, utile en développement, sur GPU ou pour tester un modèle du Hub. | `torch`, `transformers`, `sentence-transformers` (extra `krito[torch]`, plusieurs Go) |
 | `Backend` (protocole) | Interface d'un backend : `logits(pairs) -> ndarray[n, 3]` au format (E, C, N). Vous pouvez fournir le vôtre. | — |
+| `calibration` | `calibrate` / `evaluate_guardrails` : recherche des seuils sur des décisions annotées (grille de quantiles, précision cible, automatisation maximale). | `numpy` |
+| `ConfidenceJudge` | Juge optionnel : `StandardScaler` + régression logistique sur 6 signaux d'une décision → `judge_score`. Sérialisé en JSON. | `scikit-learn` (extra `krito[learn]`) |
+| `KritoClassifier` | Mode supervisé : embeddings (`OnnxEmbedder`, `SentenceTransformerEmbedder`) + régression logistique, similarité au plus proche exemple, juge appris hors pli. | `scikit-learn` + un embedder |
+| `data` | `load_examples`, `split_examples` : exemples annotés `(texte, étiquette)`, `None` pour un hors-sujet. | — |
 
-Le cœur (`KritoEngine`) ne dépend que de `numpy`. Tout le reste est interchangeable.
+Le cœur (`KritoEngine`) ne dépend que de `numpy`. scikit-learn n'est importé qu'à l'usage du juge ou du mode supervisé. Tout le reste est interchangeable.
+
+### Les primitives
+
+Toutes les primitives du moteur reposent sur les mêmes logits NLI (E, C, N) et passent par `_infer`, qui regroupe les paires (contexte, hypothèse) en appels de `batch_size` paires au backend, contextes triés par longueur :
+
+| Primitive | Hypothèses | Décision |
+|---|---|---|
+| `classify` | une par option (gabarit du moteur) | softmax de E − C entre options ; implication absolue par option. |
+| `scale` | une par niveau (gabarit propre possible) | comme `classify`, plus rang moyen Σ pᵢ·i et écart-type des rangs. |
+| `yes_no` | l'affirmation, telle quelle | P(oui) = σ((E − C) / T) ; P(neutre) = softmax(E, C, N)[N]. |
 
 ## 3. Déroulé d'un appel `classify`
 
@@ -73,7 +87,8 @@ sequenceDiagram
     B-->>K: logits [n × 3] ordonnés (E, C, N)
     K->>K: score = E − C ; probabilités = softmax(score / température)
     K->>K: implication absolue = softmax(E, C, N)[E] par option
-    K->>K: garde-fous : threshold, min_margin, min_entailment
+    K->>K: juge (optionnel) : judge_score
+    K->>K: garde-fous : threshold, min_margin, min_entailment, min_judge_score
     K-->>App: DecisionResult (clé, confiance, marge, accepted, motif, scores)
 ```
 
@@ -101,8 +116,10 @@ flowchart TD
     C -- non --> R2[Rejet :<br/>margin_too_low]
     C -- oui --> D{implication ≥ min_entailment ?}
     D -- non --> R3[Rejet :<br/>entailment_too_low]
-    D -- oui --> OK[accepted = True<br/>décision automatique]
-    R & R2 & R3 --> H[accepted = False<br/>revue humaine]
+    D -- oui --> J{score du juge ≥ min_judge_score ?}
+    J -- non --> R4[Rejet :<br/>judge_score_too_low]
+    J -- oui --> OK[accepted = True<br/>décision automatique]
+    R & R2 & R3 & R4 --> H[accepted = False<br/>revue humaine]
 ```
 
 Tous les garde-fous sont optionnels et évalués ensemble : `rejection_reason` liste **tous** les motifs, séparés par ` | `. Seuls les seuils fournis sont testés.
@@ -172,7 +189,7 @@ Toutes les mesures proviennent d'un Intel i7-4770K de 2013 : un serveur actuel f
 
 ```
 krito/
-├── src/krito/            bibliothèque (KritoEngine, backends)
+├── src/krito/            bibliothèque (KritoEngine, backends, calibration, juge, mode supervisé)
 ├── tests/                tests unitaires (faux backend) et d'intégration (vrais modèles)
 ├── examples/             exemples exécutables, Docker, Lambda
 ├── docs/                 cette documentation
